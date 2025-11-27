@@ -1,0 +1,273 @@
+<ENTRY>
+{
+ "thisFile": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/final_nn_fpga_tanh.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Nov 25 01:22:35 2025",
+ "timestampMillis": "1764013955548",
+ "buildStep": {
+  "cmdId": "3cab23d2-4ddf-4288-add7-1ae5dfa8132c",
+  "name": "vitis-run",
+  "logFile": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/logs/final_nn_fpga_tanh.steps.log",
+  "commandLine": "/home/unnath/software/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg --work_dir final_nn_fpga_tanh ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg",
+   "--work_dir",
+   "final_nn_fpga_tanh"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:22:35 2025",
+ "timestampMillis": "1764013955548",
+ "status": {
+  "cmdId": "3cab23d2-4ddf-4288-add7-1ae5dfa8132c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958049",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "nn_fpga_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/types.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/weights.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/mlp.cpp",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/biases.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/images.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/mlp.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958050",
+ "buildStep": {
+  "cmdId": "33944aac-ce1c-49a6-a201-1cb94c065b5c",
+  "name": "",
+  "logFile": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958050",
+ "status": {
+  "cmdId": "33944aac-ce1c-49a6-a201-1cb94c065b5c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958051",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958051",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/report/verilog/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958051",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/report/verilog/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958051",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958051",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/report/verilog/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:22:38 2025",
+ "timestampMillis": "1764013958051",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/report/verilog/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:27:43 2025",
+ "timestampMillis": "1764014263741",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:27:43 2025",
+ "timestampMillis": "1764014263741",
+ "report": {
+  "path": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:27:43 2025",
+ "timestampMillis": "1764014263741",
+ "status": {
+  "cmdId": "33944aac-ce1c-49a6-a201-1cb94c065b5c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:27:43 2025",
+ "timestampMillis": "1764014263802",
+ "status": {
+  "cmdId": "3cab23d2-4ddf-4288-add7-1ae5dfa8132c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:27:43 2025",
+ "timestampMillis": "1764014263802",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:27:43 2025",
+ "timestampMillis": "1764014263802",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

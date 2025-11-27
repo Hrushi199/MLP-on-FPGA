@@ -1,0 +1,4 @@
+1 warning and 26 errors generated.
+Error while processing /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp.
+clang-tidy applied 136 of 136 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

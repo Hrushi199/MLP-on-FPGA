@@ -1,0 +1,1534 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_mlp.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: ./weights.h, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_mlp.pp.0.cpp
+    DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_mlp.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: ./weights.h, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_mlp.pp.0.cpp
+    DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_mlp.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.2
+    DebugLoc:        { File: ./biases.h, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_mlp.pp.0.cpp
+    DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_mlp.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: ./biases.h, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_mlp.pp.0.cpp
+    DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_mlp.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.4
+    DebugLoc:        { File: ./images.h, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_mlp.pp.0.cpp
+    DebugLoc:        { File: /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/.autopilot/db/mlp.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.513
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_tables.cpp, 
+                       Line: 1068, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.770
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_tables.cpp, 
+                       Line: 1330, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.803
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_tables.cpp, 
+                       Line: 1366, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1059
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_tables.cpp, 
+                       Line: 1628, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1382
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_tables.cpp, 
+                       Line: 2100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_exp_tables.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 326, Column: 17 }
+Function:        _ZNK9fp_structIfE8to_floatEv
+Args:            
+  - Callee:          'fp_struct<float>::data() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 309, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 347, Column: 16 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 12, Column: 16 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 14, Column: 13 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                   Line: 13, Column: 10 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                   Line: 15, Column: 14 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 496, Column: 17 }
+Function:        _ZNK9fp_structIdE9to_doubleEv
+Args:            
+  - Callee:          'fp_struct<double>::data() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 475, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_double() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 510, Column: 16 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<double>::to_double() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 160, Column: 15 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 337, Column: 16 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 180, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 181, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 293, Column: 58 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 90, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 208, Column: 20 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 8, Column: 22 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 12, Column: 12 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 32, Column: 18 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 33, Column: 17 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 61, Column: 16 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 39, Column: 13 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                   Line: 7, Column: 9 }
+Function:        _ZN3hls4tanhEf
+Args:            
+  - Callee:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::tanh(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 22, Column: 15 }
+Function:        _Z7my_tanh8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 40, Column: 18 }
+Function:        _Z6layer1P8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'layer1(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 71, Column: 5 }
+Function:        _Z16mlp_demo_predicti
+Args:            
+  - Callee:          'layer1(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 72, Column: 5 }
+Function:        _Z16mlp_demo_predicti
+Args:            
+  - Callee:          'layer2(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 44, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 95, Column: 18 }
+Function:        _Z11nn_fpga_top7ap_uintILi4EERS0_
+Args:            
+  - Callee:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'nn_fpga_top(ap_uint<4>, ap_uint<4>&)'
+    DebugLoc:        { File: mlp.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 326, Column: 17 }
+Function:        _ZNK9fp_structIfE8to_floatEv.40.50.59.70
+Args:            
+  - Callee:          'fp_struct<float>::data() const (.43.53.62.73)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 309, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_float() const (.40.50.59.70)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 347, Column: 16 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<float>::to_float() const (.40.50.59.70)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 12, Column: 16 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 14, Column: 13 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                   Line: 13, Column: 10 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                   Line: 15, Column: 14 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 496, Column: 17 }
+Function:        _ZNK9fp_structIdE9to_doubleEv.101.111.121.139
+Args:            
+  - Callee:          'fp_struct<double>::data() const (.104.114.124.142)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 475, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_double() const (.101.111.121.139)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 510, Column: 16 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<double>::to_double() const (.101.111.121.139)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 160, Column: 15 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 180, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 181, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 190, Column: 15 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 208, Column: 20 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 293, Column: 58 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 90, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 8, Column: 22 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 12, Column: 12 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 32, Column: 18 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 33, Column: 17 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 39, Column: 13 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 61, Column: 16 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                   Line: 7, Column: 9 }
+Function:        _ZN3hls4tanhEf
+Args:            
+  - Callee:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::tanh(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 22, Column: 15 }
+Function:        _Z7my_tanh8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 40, Column: 18 }
+Function:        _Z6layer1P8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - Callee:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'layer1(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 71, Column: 5 }
+Function:        _Z16mlp_demo_predicti
+Args:            
+  - Callee:          'layer1(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 72, Column: 5 }
+Function:        _Z16mlp_demo_predicti
+Args:            
+  - Callee:          'layer2(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 44, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 95, Column: 18 }
+Function:        _Z11nn_fpga_top7ap_uintILi4EERS0_
+Args:            
+  - Callee:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'nn_fpga_top(ap_uint<4>, ap_uint<4>&)'
+    DebugLoc:        { File: mlp.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_nn_fpga_top_ir
+Args:            
+  - Callee:          'nn_fpga_top(ap_uint<4>, ap_uint<4>&)'
+    DebugLoc:        { File: mlp.cpp, Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_nn_fpga_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 322, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv.40.50.59.70
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.43.53.62.73)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const (.40.50.59.70)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 346, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const (.40.50.59.70)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 494, Column: 0 }
+Function:        _ZNK9fp_structIdE9to_doubleEv.101.111.121.139
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::data() const (.104.114.124.142)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 475, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_double() const (.101.111.121.139)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 509, Column: 0 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_double() const (.101.111.121.139)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 90, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 7, Column: 0 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+Function:        _Z7my_tanh8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+Function:        _Z16mlp_demo_predicti
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'layer1(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+Function:        _Z16mlp_demo_predicti
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'layer2(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: mlp.cpp, Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: mlp.cpp, Line: 86, Column: 0 }
+Function:        _Z11nn_fpga_top7ap_uintILi4EERS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mlp_demo_predict(int)'
+    DebugLoc:        { File: mlp.cpp, Line: 58, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'nn_fpga_top(ap_uint<4>, ap_uint<4>&)'
+    DebugLoc:        { File: mlp.cpp, Line: 86, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_77_2
+  - String:          '> at '
+  - LoopLoc:         'mlp.cpp:77:22'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: mlp.cpp, Line: 29, Column: 22 }
+Function:        _Z11nn_fpga_top7ap_uintILi4EERS0_
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mlp.cpp, Line: 29, Column: 22 }
+Function:        _Z11nn_fpga_top7ap_uintILi4EERS0_
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  nn_fpga_top
+  - String:          ' '
+  - PragmaSrcLoc:    'mlp.cpp:29:22'
+    DebugLoc:        { File: mlp.cpp, Line: 29, Column: 22 }
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'mlp.cpp:29:22'
+    DebugLoc:        { File: mlp.cpp, Line: 29, Column: 22 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 12, Column: 12 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/c++/tanhfloat.cpp', 
+                   Line: 7, Column: 9 }
+Function:        _Z7my_tanh8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - Callee:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mlp.cpp, Line: 40, Column: 18 }
+Function:        _Z11nn_fpga_top7ap_uintILi4EERS0_
+Args:            
+  - Callee:          'my_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: mlp.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'nn_fpga_top(ap_uint<4>, ap_uint<4>&)'
+    DebugLoc:        { File: mlp.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,4 @@
+mlp.cpp:93:34: warning: unexpected pragma argument 'mul', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION instances=mul limit=80 core
+                                 ^
+1 warning generated.

@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'nn_fpga_top'" level="0">
+<item name = "Date">Tue Nov 25 01:19:44 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">final_nn_fpga_tanh</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a35t-cpg236-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.279 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">52590, 58350, 0.526 ms, 0.584 ms, 52591, 58351, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_fu_157">nn_fpga_top_Pipeline_VITIS_LOOP_63_1, 786, 786, 7.860 us, 7.860 us, 785, 785, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165">nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2, 647, 647, 6.470 us, 6.470 us, 641, 641, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175">nn_fpga_top_Pipeline_VITIS_LOOP_32_2, 789, 789, 7.890 us, 7.890 us, 785, 785, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_my_tanh_fu_184">my_tanh, 5, 95, 50.000 ns, 0.950 us, 5, 95, no</column>
+<column name="grp_nn_fpga_top_Pipeline_VITIS_LOOP_77_2_fu_196">nn_fpga_top_Pipeline_VITIS_LOOP_77_2, 12, 12, 0.120 us, 0.120 us, 10, 10, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_29_1">51136, 56896, 799 ~ 889, -, -, 64, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

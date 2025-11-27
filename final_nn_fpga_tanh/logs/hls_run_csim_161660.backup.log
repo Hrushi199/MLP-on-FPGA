@@ -1,0 +1,39 @@
+WARNING: [vitis-run 60-2507] Dispatch failed to load the system diagram library librdi_system_diagram. Diagrams will not be produced.
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg
+WARNING: [HLS 200-2001] file not found 'mlp_tb.cpp' see [hls] from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=types.h' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/types.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=weights.h' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/weights.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=mlp.cpp' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/mlp.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=biases.h' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/biases.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=images.h' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/images.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=mlp.h' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/mlp.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=mlp_tb.cpp' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(7)
+WARNING: [HLS 200-40] Cannot find test bench file 'mlp_tb.cpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.top=nn_fpga_top' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/vitis-comp.json
+WARNING: [HLS 200-1998] cannot find relative file path '../../mlp_tb.cpp' in directory(s): /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/solution /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1.16 seconds. Total CPU system time: 0.23 seconds. Total elapsed time: 1.66 seconds; peak allocated memory: 236.297 MB.

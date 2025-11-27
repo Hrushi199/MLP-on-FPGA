@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../mlp.cpp in debug mode
+   Generating csim.exe
+Cycle through demo images:
+Image 0: Predicted digit = 7
+Image 1: Predicted digit = 2
+Image 2: Predicted digit = 1
+Image 3: Predicted digit = 0
+Image 4: Predicted digit = 4
+Image 5: Predicted digit = 1
+Image 6: Predicted digit = 4
+Image 7: Predicted digit = 9
+Image 8: Predicted digit = 6
+Image 9: Predicted digit = 9
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

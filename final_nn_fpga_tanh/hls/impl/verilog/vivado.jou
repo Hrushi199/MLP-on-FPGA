@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Nov 25 01:23:13 2025
+# Process ID         : 164186
+# Current directory  : /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/verilog
+# Command line       : vivado -mode batch -source run_vivado.tcl
+# Log file           : /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/verilog/vivado.log
+# Journal file       : /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/impl/verilog/vivado.jou
+# Running On         : unnath-popos
+# Platform           : Pop
+# Operating System   : Pop!_OS 24.04 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 4016.830 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16412 MB
+# Swap memory        : 20707 MB
+# Total Virtual      : 37120 MB
+# Available Virtual  : 24439 MB
+#-----------------------------------------------------------
+source run_vivado.tcl

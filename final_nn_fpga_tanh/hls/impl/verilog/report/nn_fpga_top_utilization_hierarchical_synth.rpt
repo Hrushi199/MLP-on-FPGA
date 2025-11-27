@@ -1,0 +1,75 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Tue Nov 25 01:25:59 2025
+| Host         : unnath-popos running 64-bit Pop!_OS 24.04 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 8 -file ./report/nn_fpga_top_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                   Instance                                  |                                      Module                                      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                                |                                                                            (top) |       4951 |       4570 |      16 |  365 | 4630 |     19 |      8 |         40 |
+|   bd_0_i                                                                    |                                                                             bd_0 |       4951 |       4570 |      16 |  365 | 4630 |     19 |      8 |         40 |
+|     hls_inst                                                                |                                                                  bd_0_hls_inst_0 |       4951 |       4570 |      16 |  365 | 4630 |     19 |      8 |         40 |
+|       inst                                                                  |                                                      bd_0_hls_inst_0_nn_fpga_top |       4951 |       4570 |      16 |  365 | 4630 |     19 |      8 |         40 |
+|         (inst)                                                              |                                                      bd_0_hls_inst_0_nn_fpga_top |         12 |         12 |       0 |    0 |  103 |      0 |      0 |          0 |
+|         grp_my_tanh_fu_184                                                  |                                              bd_0_hls_inst_0_nn_fpga_top_my_tanh |       4690 |       4333 |       0 |  357 | 4343 |      1 |      4 |         37 |
+|           (grp_my_tanh_fu_184)                                              |                                              bd_0_hls_inst_0_nn_fpga_top_my_tanh |        454 |        454 |       0 |    0 |  417 |      0 |      0 |          0 |
+|           dcmp_64ns_64ns_1_2_no_dsp_1_U42                                   |                          bd_0_hls_inst_0_nn_fpga_top_dcmp_64ns_64ns_1_2_no_dsp_1 |        105 |        105 |       0 |    0 |   53 |      0 |      0 |          0 |
+|             (dcmp_64ns_64ns_1_2_no_dsp_1_U42)                               |                          bd_0_hls_inst_0_nn_fpga_top_dcmp_64ns_64ns_1_2_no_dsp_1 |         44 |         44 |       0 |    0 |   53 |      0 |      0 |          0 |
+|             nn_fpga_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u                    |                       bd_0_hls_inst_0_nn_fpga_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip |         61 |         61 |       0 |    0 |    0 |      0 |      0 |          0 |
+|               U0                                                            |                          bd_0_hls_inst_0_floating_point_v7_1_20__parameterized13 |         61 |         61 |       0 |    0 |    0 |      0 |      0 |          0 |
+|                 i_synth                                                     |                      bd_0_hls_inst_0_floating_point_v7_1_20_viv__parameterized13 |         61 |         61 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           fpext_32ns_64_2_no_dsp_1_U41                                      |                             bd_0_hls_inst_0_nn_fpga_top_fpext_32ns_64_2_no_dsp_1 |         99 |         99 |       0 |    0 |   97 |      0 |      0 |          0 |
+|             (fpext_32ns_64_2_no_dsp_1_U41)                                  |                             bd_0_hls_inst_0_nn_fpga_top_fpext_32ns_64_2_no_dsp_1 |         32 |         32 |       0 |    0 |   97 |      0 |      0 |          0 |
+|             nn_fpga_top_fpext_32ns_64_2_no_dsp_1_ip_u                       |                          bd_0_hls_inst_0_nn_fpga_top_fpext_32ns_64_2_no_dsp_1_ip |         67 |         67 |       0 |    0 |    0 |      0 |      0 |          0 |
+|               U0                                                            |                           bd_0_hls_inst_0_floating_point_v7_1_20__parameterized7 |         67 |         67 |       0 |    0 |    0 |      0 |      0 |          0 |
+|                 i_synth                                                     |                       bd_0_hls_inst_0_floating_point_v7_1_20_viv__parameterized7 |         67 |         67 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           grp_generic_tanh_float_s_fu_151                                   |                                 bd_0_hls_inst_0_nn_fpga_top_generic_tanh_float_s |       4032 |       3675 |       0 |  357 | 3776 |      1 |      4 |         37 |
+|             (grp_generic_tanh_float_s_fu_151)                               |                                 bd_0_hls_inst_0_nn_fpga_top_generic_tanh_float_s |        158 |        158 |       0 |    0 |  644 |      0 |      0 |          0 |
+|             (fptrunc_64ns_32_2_no_dsp_1_U29)                                |                           bd_0_hls_inst_0_nn_fpga_top_fptrunc_64ns_32_2_no_dsp_1 |         32 |         32 |       0 |    0 |   64 |      0 |      0 |          0 |
+|             dadd_64ns_64ns_64_8_full_dsp_1_U32                              |                       bd_0_hls_inst_0_nn_fpga_top_dadd_64ns_64ns_64_8_full_dsp_1 |        633 |        618 |       0 |   15 |  493 |      0 |      0 |          3 |
+|               (dadd_64ns_64ns_64_8_full_dsp_1_U32)                          |                       bd_0_hls_inst_0_nn_fpga_top_dadd_64ns_64ns_64_8_full_dsp_1 |          0 |          0 |       0 |    0 |   63 |      0 |      0 |          0 |
+|               nn_fpga_top_dadd_64ns_64ns_64_8_full_dsp_1_ip_u               |                    bd_0_hls_inst_0_nn_fpga_top_dadd_64ns_64ns_64_8_full_dsp_1_ip |        633 |        618 |       0 |   15 |  430 |      0 |      0 |          3 |
+|                 U0                                                          |                          bd_0_hls_inst_0_floating_point_v7_1_20__parameterized11 |        633 |        618 |       0 |   15 |  430 |      0 |      0 |          3 |
+|             faddfsub_32ns_32ns_32_7_full_dsp_1_U26                          |                   bd_0_hls_inst_0_nn_fpga_top_faddfsub_32ns_32ns_32_7_full_dsp_1 |        272 |        272 |       0 |    0 |  289 |      0 |      0 |          2 |
+|               (faddfsub_32ns_32ns_32_7_full_dsp_1_U26)                      |                   bd_0_hls_inst_0_nn_fpga_top_faddfsub_32ns_32ns_32_7_full_dsp_1 |         64 |         64 |       0 |    0 |   65 |      0 |      0 |          0 |
+|               nn_fpga_top_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u           |                bd_0_hls_inst_0_nn_fpga_top_faddfsub_32ns_32ns_32_7_full_dsp_1_ip |        208 |        208 |       0 |    0 |  224 |      0 |      0 |          2 |
+|                 U0                                                          |                                           bd_0_hls_inst_0_floating_point_v7_1_20 |        208 |        208 |       0 |    0 |  224 |      0 |      0 |          2 |
+|             fdiv_32ns_32ns_32_16_no_dsp_1_U28                               |                        bd_0_hls_inst_0_nn_fpga_top_fdiv_32ns_32ns_32_16_no_dsp_1 |        791 |        757 |       0 |   34 |  730 |      0 |      0 |          0 |
+|               nn_fpga_top_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u                |                     bd_0_hls_inst_0_nn_fpga_top_fdiv_32ns_32ns_32_16_no_dsp_1_ip |        788 |        754 |       0 |   34 |  698 |      0 |      0 |          0 |
+|                 U0                                                          |                           bd_0_hls_inst_0_floating_point_v7_1_20__parameterized3 |        788 |        754 |       0 |   34 |  698 |      0 |      0 |          0 |
+|             fmul_32ns_32ns_32_4_max_dsp_1_U27                               |                        bd_0_hls_inst_0_nn_fpga_top_fmul_32ns_32ns_32_4_max_dsp_1 |         75 |         75 |       0 |    0 |  111 |      0 |      0 |          3 |
+|               (fmul_32ns_32ns_32_4_max_dsp_1_U27)                           |                        bd_0_hls_inst_0_nn_fpga_top_fmul_32ns_32ns_32_4_max_dsp_1 |          0 |          0 |       0 |    0 |   62 |      0 |      0 |          0 |
+|               nn_fpga_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u                |                     bd_0_hls_inst_0_nn_fpga_top_fmul_32ns_32ns_32_4_max_dsp_1_ip |         75 |         75 |       0 |    0 |   49 |      0 |      0 |          3 |
+|                 U0                                                          |                           bd_0_hls_inst_0_floating_point_v7_1_20__parameterized1 |         75 |         75 |       0 |    0 |   49 |      0 |      0 |          3 |
+|             fpext_32ns_64_2_no_dsp_1_U30                                    |                  bd_0_hls_inst_0_nn_fpga_top_fpext_32ns_64_2_no_dsp_1__xdcDup__1 |         67 |         67 |       0 |    0 |   32 |      0 |      0 |          0 |
+|               nn_fpga_top_fpext_32ns_64_2_no_dsp_1_ip_u                     |                       bd_0_hls_inst_0_nn_fpga_top_fpext_32ns_64_2_no_dsp_1_ip__2 |         67 |         67 |       0 |    0 |    0 |      0 |      0 |          0 |
+|                 U0                                                          |                        bd_0_hls_inst_0_floating_point_v7_1_20__parameterized7__2 |         67 |         67 |       0 |    0 |    0 |      0 |      0 |          0 |
+|             grp_exp_generic_double_s_fu_89                                  |                                 bd_0_hls_inst_0_nn_fpga_top_exp_generic_double_s |       1926 |       1618 |       0 |  308 | 1383 |      1 |      4 |         29 |
+|               (grp_exp_generic_double_s_fu_89)                              |                                 bd_0_hls_inst_0_nn_fpga_top_exp_generic_double_s |       1324 |       1020 |       0 |  304 | 1243 |      1 |      2 |          0 |
+|               mac_muladd_16s_15ns_19s_31_4_1_U15                            |                       bd_0_hls_inst_0_nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1 |        195 |        195 |       0 |    0 |    0 |      0 |      0 |          1 |
+|                 nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U        |               bd_0_hls_inst_0_nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0 |        195 |        195 |       0 |    0 |    0 |      0 |      0 |          1 |
+|               mul_43ns_36ns_79_3_1_U11                                      |                                 bd_0_hls_inst_0_nn_fpga_top_mul_43ns_36ns_79_3_1 |         76 |         76 |       0 |    0 |   35 |      0 |      0 |          6 |
+|               mul_49ns_44ns_93_5_1_U12                                      |                                 bd_0_hls_inst_0_nn_fpga_top_mul_49ns_44ns_93_5_1 |        124 |        124 |       0 |    0 |   53 |      0 |      0 |          9 |
+|               mul_50ns_50ns_99_5_1_U13                                      |                                 bd_0_hls_inst_0_nn_fpga_top_mul_50ns_50ns_99_5_1 |        159 |        159 |       0 |    0 |   18 |      0 |      0 |          9 |
+|         grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175                     |                 bd_0_hls_inst_0_nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_32_2 |         69 |         68 |       0 |    1 |   33 |     16 |      0 |          1 |
+|         grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165     | bd_0_hls_inst_0_nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2 |         89 |         82 |       0 |    7 |   74 |      0 |      1 |          1 |
+|           (grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165) | bd_0_hls_inst_0_nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2 |         38 |         31 |       0 |    7 |   65 |      0 |      0 |          0 |
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

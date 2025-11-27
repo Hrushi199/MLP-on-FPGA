@@ -1,0 +1,13 @@
+{
+  "name": "final_nn_fpga_tanh",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "final_nn_fpga_tanh"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

@@ -1,0 +1,161 @@
+<ENTRY>
+{
+ "thisFile": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/final_nn_fpga_tanh.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Nov 25 01:18:25 2025",
+ "timestampMillis": "1764013705880",
+ "buildStep": {
+  "cmdId": "fb68d86b-a26e-4684-85a5-8630cc9f085c",
+  "name": "vitis-run",
+  "logFile": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/logs/final_nn_fpga_tanh.steps.log",
+  "commandLine": "/home/unnath/software/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg --work_dir final_nn_fpga_tanh ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg",
+   "--work_dir",
+   "final_nn_fpga_tanh"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:18:25 2025",
+ "timestampMillis": "1764013705880",
+ "status": {
+  "cmdId": "fb68d86b-a26e-4684-85a5-8630cc9f085c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Nov 25 01:18:28 2025",
+ "timestampMillis": "1764013708172",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "nn_fpga_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/types.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/weights.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/mlp.cpp",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/biases.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/images.h",
+     "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/mlp.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Nov 25 01:18:28 2025",
+ "timestampMillis": "1764013708172",
+ "buildStep": {
+  "cmdId": "866a3c3e-435b-4e48-8273-d0bb1aeaec03",
+  "name": "",
+  "logFile": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/final_nn_fpga_tanh/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:18:28 2025",
+ "timestampMillis": "1764013708172",
+ "status": {
+  "cmdId": "866a3c3e-435b-4e48-8273-d0bb1aeaec03",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:18:39 2025",
+ "timestampMillis": "1764013719889",
+ "status": {
+  "cmdId": "866a3c3e-435b-4e48-8273-d0bb1aeaec03",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 25 01:18:39 2025",
+ "timestampMillis": "1764013719940",
+ "status": {
+  "cmdId": "fb68d86b-a26e-4684-85a5-8630cc9f085c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:18:39 2025",
+ "timestampMillis": "1764013719941",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 25 01:18:39 2025",
+ "timestampMillis": "1764013719941",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

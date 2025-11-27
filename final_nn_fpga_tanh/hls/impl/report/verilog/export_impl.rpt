@@ -1,0 +1,532 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Tue Nov 25 01:27:43 IST 2025
+    * Version:         2025.1 (Build 6135595 on May 21 2025)
+    * Project:         final_nn_fpga_tanh
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  artix7
+    * Target device:   xc7a35t-cpg236-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              4262
+FF:               4308
+DSP:              40
+BRAM:             46
+URAM:             0
+SRL:              225
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 6.572       |
+| Post-Route     | 7.966       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++-----------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                  | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                  | 4262 | 4308 | 40  | 46   |      |     |        |      |         |          |        |
+|   (inst)                                                              | 12   | 103  |     |      |      |     |        |      |         |          |        |
+|   B1_U                                                                |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_my_tanh_fu_184                                                  | 4019 | 4020 | 37  | 6    |      |     |        |      |         |          |        |
+|     (grp_my_tanh_fu_184)                                              | 345  | 329  |     |      |      |     |        |      |         |          |        |
+|     dcmp_64ns_64ns_1_2_no_dsp_1_U42                                   |      |      |     |      |      |     |        |      |         |          |        |
+|     fpext_32ns_64_2_no_dsp_1_U41                                      |      |      |     |      |      |     |        |      |         |          |        |
+|     grp_generic_tanh_float_s_fu_151                                   | 3536 | 3585 | 37  | 6    |      |     |        |      |         |          |        |
+|       (grp_generic_tanh_float_s_fu_151)                               | 156  | 615  |     |      |      |     |        |      |         |          |        |
+|       dadd_64ns_64ns_64_8_full_dsp_1_U32                              | 588  | 484  | 3   |      |      |     |        |      |         |          |        |
+|       faddfsub_32ns_32ns_32_7_full_dsp_1_U26                          | 232  | 287  | 2   |      |      |     |        |      |         |          |        |
+|       fcmp_32ns_32ns_1_2_no_dsp_1_U31                                 |      |      |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_16_no_dsp_1_U28                               | 774  | 697  |     |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U27                               | 71   | 109  | 3   |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U30                                    |      |      |     |      |      |     |        |      |         |          |        |
+|       fptrunc_64ns_32_2_no_dsp_1_U29                                  |      |      |     |      |      |     |        |      |         |          |        |
+|       grp_exp_generic_double_s_fu_89                                  | 1570 | 1267 | 29  | 6    |      |     |        |      |         |          |        |
+|         (grp_exp_generic_double_s_fu_89)                              | 1055 | 1127 |     | 4    |      |     |        |      |         |          |        |
+|         mac_muladd_16s_15ns_19s_31_4_1_U15                            | 116  |      | 1   |      |      |     |        |      |         |          |        |
+|         mul_13s_71s_71_5_1_U10                                        |      |      |     |      |      |     |        |      |         |          |        |
+|         mul_43ns_36ns_79_3_1_U11                                      | 75   | 35   | 6   |      |      |     |        |      |         |          |        |
+|         mul_49ns_44ns_93_5_1_U12                                      | 123  | 53   | 9   |      |      |     |        |      |         |          |        |
+|         mul_50ns_50ns_99_5_1_U13                                      | 158  | 18   | 9   |      |      |     |        |      |         |          |        |
+|         table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U   |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175                     | 63   | 34   | 1   | 32   |      |     |        |      |         |          |        |
+|     W1_U                                                              |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                          |      |      |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_10s_8s_24s_24_4_1_U4                                   |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165     | 84   | 74   | 1   | 1    |      |     |        |      |         |          |        |
+|     (grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165) | 33   | 65   |     |      |      |     |        |      |         |          |        |
+|     B2_U                                                              |      |      |     |      |      |     |        |      |         |          |        |
+|     W2_U                                                              |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                          |      |      |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_9s_24ns_24_4_1_U47                                 |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_fu_157                     |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                          |      |      |     |      |      |     |        |      |         |          |        |
+|     test_images_U                                                     |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_nn_fpga_top_Pipeline_VITIS_LOOP_77_2_fu_196                     |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                          |      |      |     |      |      |     |        |      |         |          |        |
+|   h1_U                                                                |      |      |     |      |      |     |        |      |         |          |        |
+|   image_U                                                             |      |      |     |      |      |     |        |      |         |          |        |
+|   output_U                                                            |      |      |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 20.49% | OK     |
+| FD                                                        | 50%       | 10.36% | OK     |
+| LUTRAM+SRL                                                | 25%       | 2.51%  | OK     |
+| MUXF7                                                     | 15%       | 0.01%  | OK     |
+| DSP                                                       | 80%       | 44.44% | OK     |
+| RAMB/FIFO                                                 | 80%       | 46.00% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 45.22% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 390       | 62     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.35   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+---------------------+------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path  |               SLACK | STARTPOINT PIN                                                                                                   | ENDPOINT PIN                                                                                                                                                                              | LOGIC LEVELS | MAX FANOUT |      DATAPATH DELAY |      DATAPATH LOGIC |        DATAPATH NET |
+|       |                     |                                                                                                                  |                                                                                                                                                                                           |              |            |                     |               DELAY |               DELAY |
++-------+---------------------+------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path1 | 2.03352713584899902 | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_reg_1344_reg[0]__0/C | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]/D                                                                          |           21 |         53 | 7.95946693420410156 | 4.49599933624267578 | 3.46346807479858398 |
+| Path2 | 2.10122680664062500 | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]/C        | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0/B[9]                                                              |           13 |          4 | 7.36476802825927734 | 3.38700008392333984 | 3.97776842117309570 |
+| Path3 | 2.19792461395263672 | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]/C        | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0/B[7]                                                              |           13 |          4 | 7.08907032012939453 | 3.60700011253356934 | 3.48207092285156250 |
+| Path4 | 2.27302789688110352 | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]/C | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg/A[16] |            5 |         50 | 7.28096628189086914 | 1.84800004959106445 | 5.43296623229980469 |
+| Path5 | 2.27669429779052734 | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]/C | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg/A[17] |            5 |         50 | 7.27729988098144531 | 1.84800004959106445 | 5.42930078506469727 |
++-------+---------------------+------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                                                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_reg_1344_reg[0]__0                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371[2]_i_10                                                                                       | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5                                                                                             | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1                                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1                                                                                        | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                                                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_reg_1344_reg[0]__0                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371[2]_i_10                                                                                       | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5                                                                                             | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1                                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1                                                                                        | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                                                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_reg_1344_reg[0]__0                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371[2]_i_10                                                                                       | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5                                                                                             | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1                                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1                                                                                        | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                                                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_reg_1344_reg[0]__0                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371[2]_i_10                                                                                       | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5                                                                                             | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1                                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1                                                                                        | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_reg_1344_reg[0]__0                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371[2]_i_10                                                                                       | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2                                                                                    | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2                                                                                   | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5                                                                                             | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1                                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1                                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1                                                                                        | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_5_reg_1277_reg[0]                                                                                               | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_40                                                                          | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10                                                                          | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0                                                                        | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_1__0                                                                         | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0                                                                           | CARRY.others.CARRY4  |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0                                                                               | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln229_reg_1133_reg[9]                                                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/trunc_ln255_reg_1177[2]_i_3 | LUT.others.LUT4      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg_i_85              | LUT.others.LUT5      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_7      | LUT.others.LUT3      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_3      | LUT.others.LUT2      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/tmp_12_reg_1167[0]_i_1      | LUT.others.LUT6      |
+    | grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15/nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1_DSP48_0_U/p_reg_reg                   | MULT.dsp.DSP48E1     |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+---------------------------------------------------------------------+
+| Report Type              | Report Location                                                     |
++--------------------------+---------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/nn_fpga_top_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/nn_fpga_top_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/nn_fpga_top_power_routed.rpt                    |
+| status                   | impl/verilog/report/nn_fpga_top_status_routed.rpt                   |
+| timing                   | impl/verilog/report/nn_fpga_top_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/nn_fpga_top_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/nn_fpga_top_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/nn_fpga_top_utilization_hierarchical_routed.rpt |
++--------------------------+---------------------------------------------------------------------+
+
+

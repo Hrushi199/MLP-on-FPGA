@@ -1,0 +1,64 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "mlp.cpp",
+    "fileloc": 86,
+    "instructions": 109,
+    "loads": {
+      "G": 5,
+      "L": 5
+    },
+    "memory_accesses": 7,
+    "name": "nn_fpga_top",
+    "stores": {
+      "L": 3,
+      "T": 1
+    },
+    "total_instructions": 553
+  },
+  "1": {
+    "basicblocks": 39,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "mlp.cpp",
+    "fileloc": 12,
+    "instructions": 212,
+    "memory_accesses": 0,
+    "name": "my_tanh",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 444
+  },
+  "2": {
+    "basicblocks": 13,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 54,
+    "memory_accesses": 0,
+    "name": "generic_tanh<float>",
+    "total_instructions": 232
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 42,
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 178,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 4,
+    "name": "exp_generic<double>",
+    "total_instructions": 178
+  }
+}

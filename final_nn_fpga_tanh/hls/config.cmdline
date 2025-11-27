@@ -1,0 +1,3 @@
+relativeroot=/home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh
+original_argv=--mode hls --impl --config /home/unnath/Projects/vivado_and_vitis/final_nn_fpga_tanh/hls_config.cfg --work_dir final_nn_fpga_tanh 
+

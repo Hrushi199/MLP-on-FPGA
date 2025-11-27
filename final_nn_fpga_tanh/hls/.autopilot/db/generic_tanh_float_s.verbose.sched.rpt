@@ -1,0 +1,1729 @@
+
+
+================================================================
+== Vitis HLS Report for 'generic_tanh_float_s'
+================================================================
+* Date:           Tue Nov 25 01:19:43 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        final_nn_fpga_tanh
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.279 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        3|       82|  30.000 ns|  0.820 us|    3|   82|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 192
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 112 101 2 
+2 --> 3 
+3 --> 4 83 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 53 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 84 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 
+84 --> 85 
+85 --> 86 
+86 --> 87 
+87 --> 88 
+88 --> 89 
+89 --> 90 
+90 --> 91 
+91 --> 92 
+92 --> 93 
+93 --> 94 
+94 --> 95 
+95 --> 96 
+96 --> 97 
+97 --> 98 
+98 --> 99 
+99 --> 100 
+100 --> 83 
+101 --> 102 
+102 --> 103 
+103 --> 104 
+104 --> 105 
+105 --> 106 
+106 --> 107 
+107 --> 108 
+108 --> 109 
+109 --> 110 
+110 --> 111 
+111 --> 83 
+112 --> 113 
+113 --> 114 
+114 --> 115 
+115 --> 116 
+116 --> 117 
+117 --> 118 
+118 --> 119 
+119 --> 120 
+120 --> 121 
+121 --> 122 
+122 --> 123 
+123 --> 124 
+124 --> 125 
+125 --> 126 
+126 --> 127 
+127 --> 128 
+128 --> 129 
+129 --> 130 
+130 --> 131 
+131 --> 132 
+132 --> 133 
+133 --> 134 
+134 --> 135 
+135 --> 136 
+136 --> 137 
+137 --> 138 
+138 --> 139 
+139 --> 140 
+140 --> 141 
+141 --> 142 
+142 --> 143 
+143 --> 144 
+144 --> 145 
+145 --> 146 
+146 --> 147 
+147 --> 148 
+148 --> 149 
+149 --> 150 
+150 --> 151 
+151 --> 152 
+152 --> 153 
+153 --> 154 
+154 --> 155 
+155 --> 156 
+156 --> 157 
+157 --> 158 
+158 --> 159 
+159 --> 160 
+160 --> 161 
+161 --> 162 
+162 --> 163 
+163 --> 164 
+164 --> 165 
+165 --> 166 
+166 --> 167 
+167 --> 168 
+168 --> 169 
+169 --> 170 
+170 --> 171 
+171 --> 172 
+172 --> 173 
+173 --> 174 
+174 --> 175 
+175 --> 176 
+176 --> 177 
+177 --> 178 
+178 --> 179 
+179 --> 180 
+180 --> 181 
+181 --> 182 
+182 --> 183 
+183 --> 184 
+184 --> 185 
+185 --> 186 
+186 --> 187 
+187 --> 188 
+188 --> 189 
+189 --> 190 
+190 --> 191 
+191 --> 192 
+192 --> 83 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.92>
+ST_1 : Operation 193 [1/1] (0.00ns)   --->   "%t_in_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %t_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:28]   --->   Operation 193 'read' 't_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 194 [1/1] (0.00ns)   --->   "%data = bitcast i32 %t_in_read" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:288->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:32]   --->   Operation 194 'bitcast' 'data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 195 [1/1] (0.00ns)   --->   "%din_sign = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data, i32 31" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:294->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:32]   --->   Operation 195 'bitselect' 'din_sign' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 196 [1/1] (0.00ns)   --->   "%din_exp = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %data, i32 23" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:295->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:32]   --->   Operation 196 'partselect' 'din_exp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 197 [1/1] (0.00ns)   --->   "%din_sig = trunc i32 %data" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:296->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:32]   --->   Operation 197 'trunc' 'din_sig' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 198 [1/1] (0.00ns)   --->   "%t = trunc i32 %data" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:313->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:326->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:347->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:33]   --->   Operation 198 'trunc' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 199 [1/1] (0.00ns)   --->   "%zext_ln313 = zext i31 %t" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:313->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:326->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:347->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:33]   --->   Operation 199 'zext' 'zext_ln313' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 200 [1/1] (0.00ns)   --->   "%abst_in = bitcast i32 %zext_ln313" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:327->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:347->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:14->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:13->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:33]   --->   Operation 200 'bitcast' 'abst_in' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 201 [1/1] (2.11ns)   --->   "%icmp_ln36 = icmp_eq  i8 %din_exp, i8 255" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:36]   --->   Operation 201 'icmp' 'icmp_ln36' <Predicate = true> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 202 [1/1] (0.00ns)   --->   "%br_ln36 = br i1 %icmp_ln36, void %if.else5, void %if.then" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:36]   --->   Operation 202 'br' 'br_ln36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 203 [1/1] (2.11ns)   --->   "%icmp_ln45 = icmp_ult  i8 %din_exp, i8 72" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:45]   --->   Operation 203 'icmp' 'icmp_ln45' <Predicate = (!icmp_ln36)> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 204 [1/1] (0.00ns)   --->   "%br_ln45 = br i1 %icmp_ln45, void %lor.lhs.false, void %if.then12" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:45]   --->   Operation 204 'br' 'br_ln45' <Predicate = (!icmp_ln36)> <Delay = 0.00>
+ST_1 : Operation 205 [1/1] (2.11ns)   --->   "%icmp_ln46 = icmp_eq  i8 %din_exp, i8 72" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:46]   --->   Operation 205 'icmp' 'icmp_ln46' <Predicate = (!icmp_ln36 & !icmp_ln45)> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 206 [1/1] (2.38ns)   --->   "%icmp_ln46_1 = icmp_eq  i23 %din_sig, i23 0" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:46]   --->   Operation 206 'icmp' 'icmp_ln46_1' <Predicate = (!icmp_ln36 & !icmp_ln45)> <Delay = 2.38> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.38> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 207 [1/1] (0.97ns)   --->   "%and_ln46 = and i1 %icmp_ln46, i1 %icmp_ln46_1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:46]   --->   Operation 207 'and' 'and_ln46' <Predicate = (!icmp_ln36 & !icmp_ln45)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 208 [1/1] (0.00ns)   --->   "%br_ln46 = br i1 %and_ln46, void %if.else13, void %if.then12" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:46]   --->   Operation 208 'br' 'br_ln46' <Predicate = (!icmp_ln36 & !icmp_ln45)> <Delay = 0.00>
+ST_1 : Operation 209 [1/1] (0.00ns)   --->   "%tmp = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data, i32 23, i32 30" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 209 'partselect' 'tmp' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46)> <Delay = 0.00>
+ST_1 : Operation 210 [1/1] (2.11ns)   --->   "%icmp_ln51 = icmp_ne  i8 %tmp, i8 255" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 210 'icmp' 'icmp_ln51' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46)> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 211 [2/2] (5.09ns)   --->   "%tmp_1 = fcmp_olt  i32 %abst_in, i32 22" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 211 'fcmp' 'tmp_1' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46)> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 212 [7/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 212 'fadd' 'add' <Predicate = (!icmp_ln36 & and_ln46) | (!icmp_ln36 & icmp_ln45)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 213 [1/1] (2.38ns)   --->   "%icmp_ln38 = icmp_ne  i23 %din_sig, i23 0" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38]   --->   Operation 213 'icmp' 'icmp_ln38' <Predicate = (icmp_ln36)> <Delay = 2.38> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.38> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.07>
+ST_2 : Operation 214 [1/1] (0.00ns) (grouped into LUT with out node and_ln51)   --->   "%or_ln51 = or i1 %icmp_ln46_1, i1 %icmp_ln51" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 214 'or' 'or_ln51' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 215 [1/2] (5.09ns)   --->   "%tmp_1 = fcmp_olt  i32 %abst_in, i32 22" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 215 'fcmp' 'tmp_1' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 216 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln51 = and i1 %or_ln51, i1 %tmp_1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 216 'and' 'and_ln51' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.11>
+ST_3 : Operation 217 [1/1] (1.70ns)   --->   "%br_ln51 = br i1 %and_ln51, void %if.end38, void %if.then14" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51]   --->   Operation 217 'br' 'br_ln51' <Predicate = true> <Delay = 1.70>
+ST_3 : Operation 218 [1/1] (2.11ns)   --->   "%icmp_ln54 = icmp_ult  i8 %din_exp, i8 127" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:54]   --->   Operation 218 'icmp' 'icmp_ln54' <Predicate = (and_ln51)> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.92>
+ST_4 : Operation 219 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 1, i31 %t" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 219 'bitconcatenate' 'or_ln' <Predicate = (icmp_ln54)> <Delay = 0.00>
+ST_4 : Operation 220 [1/1] (0.00ns)   --->   "%bitcast_ln55 = bitcast i32 %or_ln" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 220 'bitcast' 'bitcast_ln55' <Predicate = (icmp_ln54)> <Delay = 0.00>
+ST_4 : Operation 221 [7/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 221 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 222 [7/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 222 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.92>
+ST_5 : Operation 223 [6/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 223 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 224 [6/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 224 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.92>
+ST_6 : Operation 225 [5/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 225 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 226 [5/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 226 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.92>
+ST_7 : Operation 227 [4/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 227 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 228 [4/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 228 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.92>
+ST_8 : Operation 229 [3/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 229 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 230 [3/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 230 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.92>
+ST_9 : Operation 231 [2/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 231 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 232 [2/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 232 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.72>
+ST_10 : Operation 233 [1/7] (5.92ns)   --->   "%x = fsub i32 %bitcast_ln55, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55]   --->   Operation 233 'fsub' 'x' <Predicate = (icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 234 [1/7] (5.92ns)   --->   "%x_1 = fadd i32 %abst_in, i32 %abst_in" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:58]   --->   Operation 234 'fadd' 'x_1' <Predicate = (!icmp_ln54)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 235 [1/1] (0.79ns)   --->   "%x_3 = select i1 %icmp_ln54, i32 %x, i32 %x_1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:54]   --->   Operation 235 'select' 'x_3' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 4.09>
+ST_11 : Operation 236 [1/1] (0.00ns)   --->   "%data_1 = bitcast i32 %x_3" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:288->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:8->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 236 'bitcast' 'data_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 237 [1/1] (0.00ns)   --->   "%xs_exp_1 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32, i32 %data_1, i32 23" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:295->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:8->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 237 'partselect' 'xs_exp_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 238 [1/1] (2.11ns)   --->   "%icmp_ln9 = icmp_eq  i8 %xs_exp_1, i8 0" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:9->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 238 'icmp' 'icmp_ln9' <Predicate = true> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 239 [1/1] (1.64ns)   --->   "%br_ln9 = br i1 %icmp_ln9, void %if.end.i, void %_ZN11exp_reduce_5expm1Ef.exit" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:9->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 239 'br' 'br_ln9' <Predicate = true> <Delay = 1.64>
+ST_11 : Operation 240 [1/1] (2.11ns)   --->   "%icmp_ln10 = icmp_ult  i8 %xs_exp_1, i8 96" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:10->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 240 'icmp' 'icmp_ln10' <Predicate = (!icmp_ln9)> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 241 [1/1] (1.64ns)   --->   "%br_ln10 = br i1 %icmp_ln10, void %if.end4.i, void %_ZN11exp_reduce_5expm1Ef.exit" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:10->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 241 'br' 'br_ln10' <Predicate = (!icmp_ln9)> <Delay = 1.64>
+ST_11 : Operation 242 [2/2] (4.09ns)   --->   "%xd = fpext i32 %x_3" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 242 'fpext' 'xd' <Predicate = (!icmp_ln9 & !icmp_ln10)> <Delay = 4.09> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.09> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 4.09>
+ST_12 : Operation 243 [1/2] (4.09ns)   --->   "%xd = fpext i32 %x_3" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 243 'fpext' 'xd' <Predicate = true> <Delay = 4.09> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.09> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 4.65>
+ST_13 : Operation 244 [30/30] (4.65ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 244 'call' 'tmp_s' <Predicate = true> <Delay = 4.65> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 7.15>
+ST_14 : Operation 245 [29/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 245 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 7.15>
+ST_15 : Operation 246 [28/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 246 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 7.15>
+ST_16 : Operation 247 [27/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 247 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 7.15>
+ST_17 : Operation 248 [26/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 248 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 7.15>
+ST_18 : Operation 249 [25/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 249 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 7.15>
+ST_19 : Operation 250 [24/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 250 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 7.15>
+ST_20 : Operation 251 [23/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 251 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 7.15>
+ST_21 : Operation 252 [22/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 252 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 7.15>
+ST_22 : Operation 253 [21/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 253 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 7.15>
+ST_23 : Operation 254 [20/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 254 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 7.15>
+ST_24 : Operation 255 [19/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 255 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 7.15>
+ST_25 : Operation 256 [18/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 256 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 7.15>
+ST_26 : Operation 257 [17/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 257 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 27 <SV = 26> <Delay = 7.15>
+ST_27 : Operation 258 [16/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 258 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 28 <SV = 27> <Delay = 7.15>
+ST_28 : Operation 259 [15/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 259 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 29 <SV = 28> <Delay = 7.15>
+ST_29 : Operation 260 [14/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 260 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 30 <SV = 29> <Delay = 7.15>
+ST_30 : Operation 261 [13/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 261 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 31 <SV = 30> <Delay = 7.15>
+ST_31 : Operation 262 [12/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 262 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 32 <SV = 31> <Delay = 7.15>
+ST_32 : Operation 263 [11/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 263 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 33 <SV = 32> <Delay = 7.15>
+ST_33 : Operation 264 [10/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 264 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 34 <SV = 33> <Delay = 7.15>
+ST_34 : Operation 265 [9/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 265 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 35 <SV = 34> <Delay = 7.15>
+ST_35 : Operation 266 [8/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 266 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 36 <SV = 35> <Delay = 7.15>
+ST_36 : Operation 267 [7/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 267 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 37 <SV = 36> <Delay = 7.15>
+ST_37 : Operation 268 [6/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 268 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 38 <SV = 37> <Delay = 7.15>
+ST_38 : Operation 269 [5/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 269 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 39 <SV = 38> <Delay = 7.15>
+ST_39 : Operation 270 [4/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 270 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 40 <SV = 39> <Delay = 7.15>
+ST_40 : Operation 271 [3/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 271 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 41 <SV = 40> <Delay = 7.15>
+ST_41 : Operation 272 [2/30] (7.15ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 272 'call' 'tmp_s' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 42 <SV = 41> <Delay = 4.75>
+ST_42 : Operation 273 [1/30] (4.75ns)   --->   "%tmp_s = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 273 'call' 'tmp_s' <Predicate = true> <Delay = 4.75> <CoreType = "Generic">   --->   Generic Core
+
+State 43 <SV = 42> <Delay = 5.65>
+ST_43 : Operation 274 [8/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 274 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 5.65>
+ST_44 : Operation 275 [7/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 275 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 5.65>
+ST_45 : Operation 276 [6/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 276 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 5.65>
+ST_46 : Operation 277 [5/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 277 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 5.65>
+ST_47 : Operation 278 [4/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 278 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 5.65>
+ST_48 : Operation 279 [3/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 279 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 5.65>
+ST_49 : Operation 280 [2/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 280 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 5.65>
+ST_50 : Operation 281 [1/8] (5.65ns)   --->   "%sub_i = dadd i64 %tmp_s, i64 -1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 281 'dadd' 'sub_i' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 5.16>
+ST_51 : Operation 282 [2/2] (5.16ns)   --->   "%conv6_i = fptrunc i64 %sub_i" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 282 'fptrunc' 'conv6_i' <Predicate = true> <Delay = 5.16> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.16> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 5.16>
+ST_52 : Operation 283 [1/2] (5.16ns)   --->   "%conv6_i = fptrunc i64 %sub_i" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61]   --->   Operation 283 'fptrunc' 'conv6_i' <Predicate = true> <Delay = 5.16> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.16> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_52 : Operation 284 [1/1] (1.64ns)   --->   "%br_ln0 = br void %_ZN11exp_reduce_5expm1Ef.exit"   --->   Operation 284 'br' 'br_ln0' <Predicate = true> <Delay = 1.64>
+
+State 53 <SV = 52> <Delay = 5.92>
+ST_53 : Operation 285 [1/1] (0.00ns)   --->   "%expx = phi i32 %conv6_i, void %if.end4.i, i32 0, void %if.then14, i32 %x_3, void %if.end.i"   --->   Operation 285 'phi' 'expx' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 286 [7/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 286 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 5.92>
+ST_54 : Operation 287 [6/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 287 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 54> <Delay = 5.92>
+ST_55 : Operation 288 [5/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 288 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 55> <Delay = 5.92>
+ST_56 : Operation 289 [4/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 289 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 56> <Delay = 5.92>
+ST_57 : Operation 290 [3/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 290 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 57> <Delay = 5.92>
+ST_58 : Operation 291 [2/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 291 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 58> <Delay = 5.92>
+ST_59 : Operation 292 [1/7] (5.92ns)   --->   "%add2 = fadd i32 %expx, i32 2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 292 'fadd' 'add2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 293 [1/1] (0.00ns)   --->   "%br_ln63 = br i1 %icmp_ln54, void %if.else28, void %if.then25" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:63]   --->   Operation 293 'br' 'br_ln63' <Predicate = true> <Delay = 0.00>
+
+State 60 <SV = 59> <Delay = 6.30>
+ST_60 : Operation 294 [16/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 294 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 60> <Delay = 6.30>
+ST_61 : Operation 295 [15/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 295 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 61> <Delay = 6.30>
+ST_62 : Operation 296 [14/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 296 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 62> <Delay = 6.30>
+ST_63 : Operation 297 [13/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 297 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 63> <Delay = 6.30>
+ST_64 : Operation 298 [12/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 298 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 64> <Delay = 6.30>
+ST_65 : Operation 299 [11/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 299 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 65> <Delay = 6.30>
+ST_66 : Operation 300 [10/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 300 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 66> <Delay = 6.30>
+ST_67 : Operation 301 [9/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 301 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 67> <Delay = 6.30>
+ST_68 : Operation 302 [8/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 302 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 68> <Delay = 6.30>
+ST_69 : Operation 303 [7/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 303 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 69> <Delay = 6.30>
+ST_70 : Operation 304 [6/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 304 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 71 <SV = 70> <Delay = 6.30>
+ST_71 : Operation 305 [5/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 305 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 71> <Delay = 6.30>
+ST_72 : Operation 306 [4/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 306 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 72> <Delay = 6.30>
+ST_73 : Operation 307 [3/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 307 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 74 <SV = 73> <Delay = 6.30>
+ST_74 : Operation 308 [2/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 308 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 75 <SV = 74> <Delay = 6.30>
+ST_75 : Operation 309 [1/16] (6.30ns)   --->   "%div = fdiv i32 2, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 309 'fdiv' 'div' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 76 <SV = 75> <Delay = 5.92>
+ST_76 : Operation 310 [7/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 310 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 77 <SV = 76> <Delay = 5.92>
+ST_77 : Operation 311 [6/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 311 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 78 <SV = 77> <Delay = 5.92>
+ST_78 : Operation 312 [5/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 312 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 78> <Delay = 5.92>
+ST_79 : Operation 313 [4/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 313 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 80 <SV = 79> <Delay = 5.92>
+ST_80 : Operation 314 [3/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 314 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 80> <Delay = 5.92>
+ST_81 : Operation 315 [2/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 315 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 81> <Delay = 5.92>
+ST_82 : Operation 316 [1/7] (5.92ns)   --->   "%resultf_2 = fsub i32 1, i32 %div" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71]   --->   Operation 316 'fsub' 'resultf_2' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 82> <Delay = 2.68>
+ST_83 : Operation 317 [1/1] (1.70ns)   --->   "%br_ln0 = br void %if.end38"   --->   Operation 317 'br' 'br_ln0' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln54)> <Delay = 1.70>
+ST_83 : Operation 318 [1/1] (0.00ns)   --->   "%resultf_3 = phi i32 %resultf, void %if.then12, i32 %resultf_1, void %if.then25, i32 %resultf_2, void %if.else28, i32 %select_ln38, void %if.then, i32 1, void %if.else13"   --->   Operation 318 'phi' 'resultf_3' <Predicate = true> <Delay = 0.00>
+ST_83 : Operation 319 [1/1] (0.00ns)   --->   "%bitcast_ln83 = bitcast i32 %resultf_3" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 319 'bitcast' 'bitcast_ln83' <Predicate = (din_sign)> <Delay = 0.00>
+ST_83 : Operation 320 [1/1] (0.00ns) (grouped into LUT with out node select_ln79)   --->   "%bit_sel1 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %bitcast_ln83, i32 31" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 320 'bitselect' 'bit_sel1' <Predicate = (din_sign)> <Delay = 0.00>
+ST_83 : Operation 321 [1/1] (0.00ns) (grouped into LUT with out node select_ln79)   --->   "%xor_ln83 = xor i1 %bit_sel1, i1 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 321 'xor' 'xor_ln83' <Predicate = (din_sign)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_83 : Operation 322 [1/1] (0.00ns) (grouped into LUT with out node select_ln79)   --->   "%trunc_ln83 = trunc i32 %bitcast_ln83" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 322 'trunc' 'trunc_ln83' <Predicate = (din_sign)> <Delay = 0.00>
+ST_83 : Operation 323 [1/1] (0.00ns) (grouped into LUT with out node select_ln79)   --->   "%xor_ln1 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %xor_ln83, i31 %trunc_ln83" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 323 'bitconcatenate' 'xor_ln1' <Predicate = (din_sign)> <Delay = 0.00>
+ST_83 : Operation 324 [1/1] (0.00ns) (grouped into LUT with out node select_ln79)   --->   "%bitcast_ln83_1 = bitcast i32 %xor_ln1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:83]   --->   Operation 324 'bitcast' 'bitcast_ln83_1' <Predicate = (din_sign)> <Delay = 0.00>
+ST_83 : Operation 325 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln79 = select i1 %din_sign, i32 %bitcast_ln83_1, i32 %resultf_3" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:79]   --->   Operation 325 'select' 'select_ln79' <Predicate = true> <Delay = 0.97> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_83 : Operation 326 [1/1] (0.00ns)   --->   "%ret_ln85 = ret i32 %select_ln79" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:85]   --->   Operation 326 'ret' 'ret_ln85' <Predicate = true> <Delay = 0.00>
+
+State 84 <SV = 59> <Delay = 7.27>
+ST_84 : Operation 327 [1/1] (0.00ns)   --->   "%bitcast_ln66 = bitcast i32 %expx" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 327 'bitcast' 'bitcast_ln66' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 328 [1/1] (0.00ns)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %bitcast_ln66, i32 31" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 328 'bitselect' 'bit_sel' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 329 [1/1] (0.97ns)   --->   "%xor_ln66 = xor i1 %bit_sel, i1 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 329 'xor' 'xor_ln66' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_84 : Operation 330 [1/1] (0.00ns)   --->   "%trunc_ln66 = trunc i32 %bitcast_ln66" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 330 'trunc' 'trunc_ln66' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 331 [1/1] (0.00ns)   --->   "%xor_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %xor_ln66, i31 %trunc_ln66" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 331 'bitconcatenate' 'xor_ln' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 332 [1/1] (0.00ns)   --->   "%bitcast_ln66_1 = bitcast i32 %xor_ln" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 332 'bitcast' 'bitcast_ln66_1' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 333 [16/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 333 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 85 <SV = 60> <Delay = 6.30>
+ST_85 : Operation 334 [15/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 334 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 86 <SV = 61> <Delay = 6.30>
+ST_86 : Operation 335 [14/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 335 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 87 <SV = 62> <Delay = 6.30>
+ST_87 : Operation 336 [13/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 336 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 88 <SV = 63> <Delay = 6.30>
+ST_88 : Operation 337 [12/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 337 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 89 <SV = 64> <Delay = 6.30>
+ST_89 : Operation 338 [11/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 338 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 90 <SV = 65> <Delay = 6.30>
+ST_90 : Operation 339 [10/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 339 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 91 <SV = 66> <Delay = 6.30>
+ST_91 : Operation 340 [9/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 340 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 92 <SV = 67> <Delay = 6.30>
+ST_92 : Operation 341 [8/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 341 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 93 <SV = 68> <Delay = 6.30>
+ST_93 : Operation 342 [7/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 342 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 94 <SV = 69> <Delay = 6.30>
+ST_94 : Operation 343 [6/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 343 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 95 <SV = 70> <Delay = 6.30>
+ST_95 : Operation 344 [5/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 344 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 96 <SV = 71> <Delay = 6.30>
+ST_96 : Operation 345 [4/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 345 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 97 <SV = 72> <Delay = 6.30>
+ST_97 : Operation 346 [3/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 346 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 98 <SV = 73> <Delay = 6.30>
+ST_98 : Operation 347 [2/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 347 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 99 <SV = 74> <Delay = 6.30>
+ST_99 : Operation 348 [1/16] (6.30ns)   --->   "%resultf_1 = fdiv i32 %bitcast_ln66_1, i32 %add2" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66]   --->   Operation 348 'fdiv' 'resultf_1' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 100 <SV = 75> <Delay = 1.70>
+ST_100 : Operation 349 [1/1] (1.70ns)   --->   "%br_ln67 = br void %if.end38" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:67]   --->   Operation 349 'br' 'br_ln67' <Predicate = true> <Delay = 1.70>
+
+State 101 <SV = 1> <Delay = 5.92>
+ST_101 : Operation 350 [6/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 350 'fadd' 'add' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 102 <SV = 2> <Delay = 5.92>
+ST_102 : Operation 351 [5/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 351 'fadd' 'add' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 103 <SV = 3> <Delay = 5.92>
+ST_103 : Operation 352 [4/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 352 'fadd' 'add' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 104 <SV = 4> <Delay = 5.92>
+ST_104 : Operation 353 [3/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 353 'fadd' 'add' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 105 <SV = 5> <Delay = 5.92>
+ST_105 : Operation 354 [2/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 354 'fadd' 'add' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 106 <SV = 6> <Delay = 5.92>
+ST_106 : Operation 355 [1/7] (5.92ns)   --->   "%add = fadd i32 %abst_in, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 355 'fadd' 'add' <Predicate = true> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 107 <SV = 7> <Delay = 5.78>
+ST_107 : Operation 356 [4/4] (5.78ns)   --->   "%resultf = fmul i32 %abst_in, i32 %add" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 356 'fmul' 'resultf' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 108 <SV = 8> <Delay = 5.78>
+ST_108 : Operation 357 [3/4] (5.78ns)   --->   "%resultf = fmul i32 %abst_in, i32 %add" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 357 'fmul' 'resultf' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 109 <SV = 9> <Delay = 5.78>
+ST_109 : Operation 358 [2/4] (5.78ns)   --->   "%resultf = fmul i32 %abst_in, i32 %add" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 358 'fmul' 'resultf' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 110 <SV = 10> <Delay = 5.78>
+ST_110 : Operation 359 [1/4] (5.78ns)   --->   "%resultf = fmul i32 %abst_in, i32 %add" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49]   --->   Operation 359 'fmul' 'resultf' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 111 <SV = 11> <Delay = 1.70>
+ST_111 : Operation 360 [1/1] (1.70ns)   --->   "%br_ln50 = br void %if.end38" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:50]   --->   Operation 360 'br' 'br_ln50' <Predicate = true> <Delay = 1.70>
+
+State 112 <SV = 1> <Delay = 0.00>
+
+State 113 <SV = 2> <Delay = 0.00>
+
+State 114 <SV = 3> <Delay = 0.00>
+
+State 115 <SV = 4> <Delay = 0.00>
+
+State 116 <SV = 5> <Delay = 0.00>
+
+State 117 <SV = 6> <Delay = 0.00>
+
+State 118 <SV = 7> <Delay = 0.00>
+
+State 119 <SV = 8> <Delay = 0.00>
+
+State 120 <SV = 9> <Delay = 0.00>
+
+State 121 <SV = 10> <Delay = 0.00>
+
+State 122 <SV = 11> <Delay = 0.00>
+
+State 123 <SV = 12> <Delay = 0.00>
+
+State 124 <SV = 13> <Delay = 0.00>
+
+State 125 <SV = 14> <Delay = 0.00>
+
+State 126 <SV = 15> <Delay = 0.00>
+
+State 127 <SV = 16> <Delay = 0.00>
+
+State 128 <SV = 17> <Delay = 0.00>
+
+State 129 <SV = 18> <Delay = 0.00>
+
+State 130 <SV = 19> <Delay = 0.00>
+
+State 131 <SV = 20> <Delay = 0.00>
+
+State 132 <SV = 21> <Delay = 0.00>
+
+State 133 <SV = 22> <Delay = 0.00>
+
+State 134 <SV = 23> <Delay = 0.00>
+
+State 135 <SV = 24> <Delay = 0.00>
+
+State 136 <SV = 25> <Delay = 0.00>
+
+State 137 <SV = 26> <Delay = 0.00>
+
+State 138 <SV = 27> <Delay = 0.00>
+
+State 139 <SV = 28> <Delay = 0.00>
+
+State 140 <SV = 29> <Delay = 0.00>
+
+State 141 <SV = 30> <Delay = 0.00>
+
+State 142 <SV = 31> <Delay = 0.00>
+
+State 143 <SV = 32> <Delay = 0.00>
+
+State 144 <SV = 33> <Delay = 0.00>
+
+State 145 <SV = 34> <Delay = 0.00>
+
+State 146 <SV = 35> <Delay = 0.00>
+
+State 147 <SV = 36> <Delay = 0.00>
+
+State 148 <SV = 37> <Delay = 0.00>
+
+State 149 <SV = 38> <Delay = 0.00>
+
+State 150 <SV = 39> <Delay = 0.00>
+
+State 151 <SV = 40> <Delay = 0.00>
+
+State 152 <SV = 41> <Delay = 0.00>
+
+State 153 <SV = 42> <Delay = 0.00>
+
+State 154 <SV = 43> <Delay = 0.00>
+
+State 155 <SV = 44> <Delay = 0.00>
+
+State 156 <SV = 45> <Delay = 0.00>
+
+State 157 <SV = 46> <Delay = 0.00>
+
+State 158 <SV = 47> <Delay = 0.00>
+
+State 159 <SV = 48> <Delay = 0.00>
+
+State 160 <SV = 49> <Delay = 0.00>
+
+State 161 <SV = 50> <Delay = 0.00>
+
+State 162 <SV = 51> <Delay = 0.00>
+
+State 163 <SV = 52> <Delay = 0.00>
+
+State 164 <SV = 53> <Delay = 0.00>
+
+State 165 <SV = 54> <Delay = 0.00>
+
+State 166 <SV = 55> <Delay = 0.00>
+
+State 167 <SV = 56> <Delay = 0.00>
+
+State 168 <SV = 57> <Delay = 0.00>
+
+State 169 <SV = 58> <Delay = 0.00>
+
+State 170 <SV = 59> <Delay = 0.00>
+
+State 171 <SV = 60> <Delay = 0.00>
+
+State 172 <SV = 61> <Delay = 0.00>
+
+State 173 <SV = 62> <Delay = 0.00>
+
+State 174 <SV = 63> <Delay = 0.00>
+
+State 175 <SV = 64> <Delay = 0.00>
+
+State 176 <SV = 65> <Delay = 0.00>
+
+State 177 <SV = 66> <Delay = 0.00>
+
+State 178 <SV = 67> <Delay = 0.00>
+
+State 179 <SV = 68> <Delay = 0.00>
+
+State 180 <SV = 69> <Delay = 0.00>
+
+State 181 <SV = 70> <Delay = 0.00>
+
+State 182 <SV = 71> <Delay = 0.00>
+
+State 183 <SV = 72> <Delay = 0.00>
+
+State 184 <SV = 73> <Delay = 0.00>
+
+State 185 <SV = 74> <Delay = 0.00>
+
+State 186 <SV = 75> <Delay = 0.00>
+
+State 187 <SV = 76> <Delay = 0.00>
+
+State 188 <SV = 77> <Delay = 0.00>
+
+State 189 <SV = 78> <Delay = 0.00>
+
+State 190 <SV = 79> <Delay = 0.00>
+
+State 191 <SV = 80> <Delay = 0.00>
+
+State 192 <SV = 81> <Delay = 1.70>
+ST_192 : Operation 361 [1/1] (0.79ns)   --->   "%select_ln38 = select i1 %icmp_ln38, i32 nan, i32 1" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38]   --->   Operation 361 'select' 'select_ln38' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_192 : Operation 362 [1/1] (1.70ns)   --->   "%br_ln38 = br void %if.end38" [/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38]   --->   Operation 362 'br' 'br_ln38' <Predicate = true> <Delay = 1.70>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.926ns
+The critical path consists of the following:
+	wire read operation ('t_in', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:28) on port 't_in' (/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:28) [5]  (0.000 ns)
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 2>: 6.073ns
+The critical path consists of the following:
+	'fcmp' operation 1 bit ('tmp_1', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51) [27]  (5.095 ns)
+	'and' operation 1 bit ('and_ln51', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:51) [28]  (0.978 ns)
+
+ <State 3>: 2.115ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln54', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:54) [31]  (2.115 ns)
+
+ <State 4>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+
+ <State 5>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+
+ <State 6>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+
+ <State 7>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+
+ <State 8>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+
+ <State 9>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+
+ <State 10>: 6.722ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:55) [34]  (5.926 ns)
+	'select' operation 32 bit ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:54) [36]  (0.796 ns)
+
+ <State 11>: 4.098ns
+The critical path consists of the following:
+	'fpext' operation 64 bit ('xd', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [45]  (4.098 ns)
+
+ <State 12>: 4.098ns
+The critical path consists of the following:
+	'fpext' operation 64 bit ('xd', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:11->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [45]  (4.098 ns)
+
+ <State 13>: 4.659ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (4.659 ns)
+
+ <State 14>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 15>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 16>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 17>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 18>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 19>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 20>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 21>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 22>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 23>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 24>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 25>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 26>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 27>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 28>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 29>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 30>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 31>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 32>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 33>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 34>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 35>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 36>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 37>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 38>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 39>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 40>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 41>: 7.160ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (7.160 ns)
+
+ <State 42>: 4.755ns
+The critical path consists of the following:
+	'call' operation 64 bit ('tmp_s', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) to 'exp_generic<double>' [46]  (4.755 ns)
+
+ <State 43>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 44>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 45>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 46>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 47>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 48>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 49>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 50>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('sub_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [47]  (5.650 ns)
+
+ <State 51>: 5.165ns
+The critical path consists of the following:
+	'fptrunc' operation 32 bit ('conv6_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [48]  (5.165 ns)
+
+ <State 52>: 5.165ns
+The critical path consists of the following:
+	'fptrunc' operation 32 bit ('conv6_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [48]  (5.165 ns)
+
+ <State 53>: 5.926ns
+The critical path consists of the following:
+	'phi' operation 32 bit ('dc') with incoming values : ('x', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:54) ('conv6_i', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp:12->/wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:61) [51]  (0.000 ns)
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 54>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 55>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 56>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 57>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 58>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 59>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add2', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [52]  (5.926 ns)
+
+ <State 60>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 61>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 62>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 63>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 64>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 65>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 66>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 67>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 68>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 69>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 70>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 71>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 72>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 73>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 74>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 75>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('div', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [55]  (6.301 ns)
+
+ <State 76>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 77>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 78>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 79>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 80>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 81>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 82>: 5.926ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) [56]  (5.926 ns)
+
+ <State 83>: 2.685ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 32 bit ('resultf') with incoming values : ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) ('select_ln38', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38) [76]  (1.707 ns)
+	'phi' operation 32 bit ('resultf') with incoming values : ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) ('select_ln38', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38) [76]  (0.000 ns)
+	'select' operation 32 bit ('select_ln79', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:79) [83]  (0.978 ns)
+
+ <State 84>: 7.279ns
+The critical path consists of the following:
+	'xor' operation 1 bit ('xor_ln66', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [61]  (0.978 ns)
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 85>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 86>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 87>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 88>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 89>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 90>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 91>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 92>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 93>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 94>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 95>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 96>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 97>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 98>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 99>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) [65]  (6.301 ns)
+
+ <State 100>: 1.707ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 32 bit ('resultf') with incoming values : ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) ('select_ln38', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38) [76]  (1.707 ns)
+
+ <State 101>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 102>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 103>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 104>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 105>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 106>: 5.926ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('add', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [68]  (5.926 ns)
+
+ <State 107>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [69]  (5.784 ns)
+
+ <State 108>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [69]  (5.784 ns)
+
+ <State 109>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [69]  (5.784 ns)
+
+ <State 110>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) [69]  (5.784 ns)
+
+ <State 111>: 1.707ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 32 bit ('resultf') with incoming values : ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) ('select_ln38', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38) [76]  (1.707 ns)
+
+ <State 112>: 0.000ns
+The critical path consists of the following:
+
+ <State 113>: 0.000ns
+The critical path consists of the following:
+
+ <State 114>: 0.000ns
+The critical path consists of the following:
+
+ <State 115>: 0.000ns
+The critical path consists of the following:
+
+ <State 116>: 0.000ns
+The critical path consists of the following:
+
+ <State 117>: 0.000ns
+The critical path consists of the following:
+
+ <State 118>: 0.000ns
+The critical path consists of the following:
+
+ <State 119>: 0.000ns
+The critical path consists of the following:
+
+ <State 120>: 0.000ns
+The critical path consists of the following:
+
+ <State 121>: 0.000ns
+The critical path consists of the following:
+
+ <State 122>: 0.000ns
+The critical path consists of the following:
+
+ <State 123>: 0.000ns
+The critical path consists of the following:
+
+ <State 124>: 0.000ns
+The critical path consists of the following:
+
+ <State 125>: 0.000ns
+The critical path consists of the following:
+
+ <State 126>: 0.000ns
+The critical path consists of the following:
+
+ <State 127>: 0.000ns
+The critical path consists of the following:
+
+ <State 128>: 0.000ns
+The critical path consists of the following:
+
+ <State 129>: 0.000ns
+The critical path consists of the following:
+
+ <State 130>: 0.000ns
+The critical path consists of the following:
+
+ <State 131>: 0.000ns
+The critical path consists of the following:
+
+ <State 132>: 0.000ns
+The critical path consists of the following:
+
+ <State 133>: 0.000ns
+The critical path consists of the following:
+
+ <State 134>: 0.000ns
+The critical path consists of the following:
+
+ <State 135>: 0.000ns
+The critical path consists of the following:
+
+ <State 136>: 0.000ns
+The critical path consists of the following:
+
+ <State 137>: 0.000ns
+The critical path consists of the following:
+
+ <State 138>: 0.000ns
+The critical path consists of the following:
+
+ <State 139>: 0.000ns
+The critical path consists of the following:
+
+ <State 140>: 0.000ns
+The critical path consists of the following:
+
+ <State 141>: 0.000ns
+The critical path consists of the following:
+
+ <State 142>: 0.000ns
+The critical path consists of the following:
+
+ <State 143>: 0.000ns
+The critical path consists of the following:
+
+ <State 144>: 0.000ns
+The critical path consists of the following:
+
+ <State 145>: 0.000ns
+The critical path consists of the following:
+
+ <State 146>: 0.000ns
+The critical path consists of the following:
+
+ <State 147>: 0.000ns
+The critical path consists of the following:
+
+ <State 148>: 0.000ns
+The critical path consists of the following:
+
+ <State 149>: 0.000ns
+The critical path consists of the following:
+
+ <State 150>: 0.000ns
+The critical path consists of the following:
+
+ <State 151>: 0.000ns
+The critical path consists of the following:
+
+ <State 152>: 0.000ns
+The critical path consists of the following:
+
+ <State 153>: 0.000ns
+The critical path consists of the following:
+
+ <State 154>: 0.000ns
+The critical path consists of the following:
+
+ <State 155>: 0.000ns
+The critical path consists of the following:
+
+ <State 156>: 0.000ns
+The critical path consists of the following:
+
+ <State 157>: 0.000ns
+The critical path consists of the following:
+
+ <State 158>: 0.000ns
+The critical path consists of the following:
+
+ <State 159>: 0.000ns
+The critical path consists of the following:
+
+ <State 160>: 0.000ns
+The critical path consists of the following:
+
+ <State 161>: 0.000ns
+The critical path consists of the following:
+
+ <State 162>: 0.000ns
+The critical path consists of the following:
+
+ <State 163>: 0.000ns
+The critical path consists of the following:
+
+ <State 164>: 0.000ns
+The critical path consists of the following:
+
+ <State 165>: 0.000ns
+The critical path consists of the following:
+
+ <State 166>: 0.000ns
+The critical path consists of the following:
+
+ <State 167>: 0.000ns
+The critical path consists of the following:
+
+ <State 168>: 0.000ns
+The critical path consists of the following:
+
+ <State 169>: 0.000ns
+The critical path consists of the following:
+
+ <State 170>: 0.000ns
+The critical path consists of the following:
+
+ <State 171>: 0.000ns
+The critical path consists of the following:
+
+ <State 172>: 0.000ns
+The critical path consists of the following:
+
+ <State 173>: 0.000ns
+The critical path consists of the following:
+
+ <State 174>: 0.000ns
+The critical path consists of the following:
+
+ <State 175>: 0.000ns
+The critical path consists of the following:
+
+ <State 176>: 0.000ns
+The critical path consists of the following:
+
+ <State 177>: 0.000ns
+The critical path consists of the following:
+
+ <State 178>: 0.000ns
+The critical path consists of the following:
+
+ <State 179>: 0.000ns
+The critical path consists of the following:
+
+ <State 180>: 0.000ns
+The critical path consists of the following:
+
+ <State 181>: 0.000ns
+The critical path consists of the following:
+
+ <State 182>: 0.000ns
+The critical path consists of the following:
+
+ <State 183>: 0.000ns
+The critical path consists of the following:
+
+ <State 184>: 0.000ns
+The critical path consists of the following:
+
+ <State 185>: 0.000ns
+The critical path consists of the following:
+
+ <State 186>: 0.000ns
+The critical path consists of the following:
+
+ <State 187>: 0.000ns
+The critical path consists of the following:
+
+ <State 188>: 0.000ns
+The critical path consists of the following:
+
+ <State 189>: 0.000ns
+The critical path consists of the following:
+
+ <State 190>: 0.000ns
+The critical path consists of the following:
+
+ <State 191>: 0.000ns
+The critical path consists of the following:
+
+ <State 192>: 1.707ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 32 bit ('resultf') with incoming values : ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:71) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:66) ('resultf', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:49) ('select_ln38', /wrk/ci/prod/2025.1/hls_product/continuous/640/2025.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h:38) [76]  (1.707 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+	State 104
+	State 105
+	State 106
+	State 107
+	State 108
+	State 109
+	State 110
+	State 111
+	State 112
+	State 113
+	State 114
+	State 115
+	State 116
+	State 117
+	State 118
+	State 119
+	State 120
+	State 121
+	State 122
+	State 123
+	State 124
+	State 125
+	State 126
+	State 127
+	State 128
+	State 129
+	State 130
+	State 131
+	State 132
+	State 133
+	State 134
+	State 135
+	State 136
+	State 137
+	State 138
+	State 139
+	State 140
+	State 141
+	State 142
+	State 143
+	State 144
+	State 145
+	State 146
+	State 147
+	State 148
+	State 149
+	State 150
+	State 151
+	State 152
+	State 153
+	State 154
+	State 155
+	State 156
+	State 157
+	State 158
+	State 159
+	State 160
+	State 161
+	State 162
+	State 163
+	State 164
+	State 165
+	State 166
+	State 167
+	State 168
+	State 169
+	State 170
+	State 171
+	State 172
+	State 173
+	State 174
+	State 175
+	State 176
+	State 177
+	State 178
+	State 179
+	State 180
+	State 181
+	State 182
+	State 183
+	State 184
+	State 185
+	State 186
+	State 187
+	State 188
+	State 189
+	State 190
+	State 191
+	State 192
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

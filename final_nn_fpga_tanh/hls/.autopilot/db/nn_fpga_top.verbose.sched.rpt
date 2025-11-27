@@ -1,0 +1,272 @@
+
+
+================================================================
+== Vitis HLS Report for 'nn_fpga_top'
+================================================================
+* Date:           Tue Nov 25 01:19:43 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        final_nn_fpga_tanh
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.279 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    52590|    58350|  0.526 ms|  0.584 ms|  52591|  58351|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+-----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration |  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency  |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+-----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_29_1  |    51136|    56896|  799 ~ 889|          -|          -|    64|        no|
+        +-------------------+---------+---------+-----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 9 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 4 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.62>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 15 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%i_1 = alloca i32 1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 16 'alloca' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%image_idx_read = read i4 @_ssdm_op_Read.ap_none.i4, i4 %image_idx"   --->   Operation 17 'read' 'image_idx_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%max_idx_loc = alloca i64 1"   --->   Operation 18 'alloca' 'max_idx_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%acc_1_loc = alloca i64 1"   --->   Operation 19 'alloca' 'acc_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%output = alloca i64 1" [mlp.cpp:59->mlp.cpp:95]   --->   Operation 20 'alloca' 'output' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 10> <RAM>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%image = alloca i64 1" [mlp.cpp:60->mlp.cpp:95]   --->   Operation 21 'alloca' 'image' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%h1 = alloca i64 1" [mlp.cpp:68->mlp.cpp:95]   --->   Operation 22 'alloca' 'h1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i4 %image_idx_read" [mlp.cpp:63->mlp.cpp:95]   --->   Operation 23 'zext' 'zext_ln63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (5.62ns)   --->   "%mul_ln63 = mul i13 %zext_ln63, i13 784" [mlp.cpp:63->mlp.cpp:95]   --->   Operation 24 'mul' 'mul_ln63' <Predicate = true> <Delay = 5.62> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.62> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (1.61ns)   --->   "%store_ln29 = store i7 0, i7 %i_1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 25 'store' 'store_ln29' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 26 [1/1] (1.61ns)   --->   "%store_ln0 = store i16 0, i16 %phi_mul"   --->   Operation 26 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+
+State 2 <SV = 1> <Delay = 5.39>
+ST_2 : Operation 27 [2/2] (5.39ns)   --->   "%call_ln63 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_63_1, i13 %mul_ln63, i10 %image, i10 %test_images" [mlp.cpp:63->mlp.cpp:95]   --->   Operation 27 'call' 'call_ln63' <Predicate = true> <Delay = 5.39> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 5.34>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%spectopmodule_ln86 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty" [mlp.cpp:86]   --->   Operation 28 'spectopmodule' 'spectopmodule_ln86' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln86 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0, i32 0" [mlp.cpp:86]   --->   Operation 29 'specinterface' 'specinterface_ln86' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %image_idx"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %image_idx, void @empty_1, i32 4294967295, i32 4294967295, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %led_out"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i4 %led_out, void @empty_1, i32 4294967295, i32 4294967295, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/2] (5.34ns)   --->   "%call_ln63 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_63_1, i13 %mul_ln63, i10 %image, i10 %test_images" [mlp.cpp:63->mlp.cpp:95]   --->   Operation 34 'call' 'call_ln63' <Predicate = true> <Delay = 5.34> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln29 = br void %for.body.i.i" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 35 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.75>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%phi_mul_load = load i16 %phi_mul" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 36 'load' 'phi_mul_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%i = load i7 %i_1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 37 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (2.14ns)   --->   "%add_ln29_1 = add i16 %phi_mul_load, i16 784" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 38 'add' 'add_ln29_1' <Predicate = true> <Delay = 2.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 39 [1/1] (2.03ns)   --->   "%icmp_ln29 = icmp_eq  i7 %i, i7 64" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 39 'icmp' 'icmp_ln29' <Predicate = true> <Delay = 2.03> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.03> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (2.03ns)   --->   "%add_ln29 = add i7 %i, i7 1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 40 'add' 'add_ln29' <Predicate = true> <Delay = 2.03> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.03> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %icmp_ln29, void %for.body.i.i.split, void %for.body4.i40.i.preheader" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 41 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (1.61ns)   --->   "%store_ln29 = store i7 %add_ln29, i7 %i_1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 42 'store' 'store_ln29' <Predicate = (!icmp_ln29)> <Delay = 1.61>
+ST_4 : Operation 43 [1/1] (1.61ns)   --->   "%store_ln29 = store i16 %add_ln29_1, i16 %phi_mul" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 43 'store' 'store_ln29' <Predicate = (!icmp_ln29)> <Delay = 1.61>
+ST_4 : Operation 44 [2/2] (0.00ns)   --->   "%call_ln0 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2, i16 %h1, i16 %output, i9 %W2, i7 %B2"   --->   Operation 44 'call' 'call_ln0' <Predicate = (icmp_ln29)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 5.40>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i7 %i" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 45 'zext' 'zext_ln29' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [2/2] (5.40ns)   --->   "%call_ln29 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_32_2, i16 %phi_mul_load, i10 %image, i16 %acc_1_loc, i8 %W1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 46 'call' 'call_ln29' <Predicate = true> <Delay = 5.40> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%B1_addr = getelementptr i5 %B1, i64 0, i64 %zext_ln29" [mlp.cpp:36->mlp.cpp:71->mlp.cpp:95]   --->   Operation 47 'getelementptr' 'B1_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [2/2] (2.15ns)   --->   "%B1_load = load i6 %B1_addr" [mlp.cpp:36->mlp.cpp:71->mlp.cpp:95]   --->   Operation 48 'load' 'B1_load' <Predicate = true> <Delay = 2.15> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 5> <Depth = 64> <ROM>
+
+State 6 <SV = 5> <Delay = 2.15>
+ST_6 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln29 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_32_2, i16 %phi_mul_load, i10 %image, i16 %acc_1_loc, i8 %W1" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 49 'call' 'call_ln29' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 50 [1/2] ( I:2.15ns O:2.15ns )   --->   "%B1_load = load i6 %B1_addr" [mlp.cpp:36->mlp.cpp:71->mlp.cpp:95]   --->   Operation 50 'load' 'B1_load' <Predicate = true> <Delay = 2.15> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 5> <Depth = 64> <ROM>
+
+State 7 <SV = 6> <Delay = 5.90>
+ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%acc_1_loc_load = load i16 %acc_1_loc"   --->   Operation 51 'load' 'acc_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 52 [1/1] (0.00ns)   --->   "%sext_ln36 = sext i5 %B1_load" [mlp.cpp:36->mlp.cpp:71->mlp.cpp:95]   --->   Operation 52 'sext' 'sext_ln36' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 53 [1/1] (2.14ns)   --->   "%acc = add i16 %sext_ln36, i16 %acc_1_loc_load" [mlp.cpp:36->mlp.cpp:71->mlp.cpp:95]   --->   Operation 53 'add' 'acc' <Predicate = true> <Delay = 2.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 54 [2/2] (3.75ns)   --->   "%ref_tmp12_i_i = call i16 @my_tanh, i16 %acc, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [mlp.cpp:40->mlp.cpp:71->mlp.cpp:95]   --->   Operation 54 'call' 'ref_tmp12_i_i' <Predicate = true> <Delay = 3.75> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 4.99>
+ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%speclooptripcount_ln29 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 55 'speclooptripcount' 'speclooptripcount_ln29' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%specloopname_ln29 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 56 'specloopname' 'specloopname_ln29' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/2] (1.73ns)   --->   "%ref_tmp12_i_i = call i16 @my_tanh, i16 %acc, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [mlp.cpp:40->mlp.cpp:71->mlp.cpp:95]   --->   Operation 57 'call' 'ref_tmp12_i_i' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 58 [1/1] (0.00ns)   --->   "%h1_addr = getelementptr i16 %h1, i64 0, i64 %zext_ln29" [mlp.cpp:40->mlp.cpp:71->mlp.cpp:95]   --->   Operation 58 'getelementptr' 'h1_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 59 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln40 = store i16 %ref_tmp12_i_i, i6 %h1_addr" [mlp.cpp:40->mlp.cpp:71->mlp.cpp:95]   --->   Operation 59 'store' 'store_ln40' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln29 = br void %for.body.i.i" [mlp.cpp:29->mlp.cpp:71->mlp.cpp:95]   --->   Operation 60 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 4> <Delay = 0.00>
+ST_9 : Operation 61 [1/2] (0.00ns)   --->   "%call_ln0 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2, i16 %h1, i16 %output, i9 %W2, i7 %B2"   --->   Operation 61 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 5> <Delay = 2.15>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%out = getelementptr i16 %output, i64 0, i64 0" [mlp.cpp:72->mlp.cpp:95]   --->   Operation 62 'getelementptr' 'out' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 63 [2/2] (2.15ns)   --->   "%max_val = load i4 %out" [mlp.cpp:76->mlp.cpp:95]   --->   Operation 63 'load' 'max_val' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 10> <RAM>
+
+State 11 <SV = 6> <Delay = 2.15>
+ST_11 : Operation 64 [1/2] ( I:2.15ns O:2.15ns )   --->   "%max_val = load i4 %out" [mlp.cpp:76->mlp.cpp:95]   --->   Operation 64 'load' 'max_val' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 10> <RAM>
+
+State 12 <SV = 7> <Delay = 1.61>
+ST_12 : Operation 65 [2/2] (1.61ns)   --->   "%call_ln76 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_77_2, i16 %max_val, i16 %output, i4 %max_idx_loc" [mlp.cpp:76->mlp.cpp:95]   --->   Operation 65 'call' 'call_ln76' <Predicate = true> <Delay = 1.61> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 8> <Delay = 0.00>
+ST_13 : Operation 66 [1/2] (0.00ns)   --->   "%call_ln76 = call void @nn_fpga_top_Pipeline_VITIS_LOOP_77_2, i16 %max_val, i16 %output, i4 %max_idx_loc" [mlp.cpp:76->mlp.cpp:95]   --->   Operation 66 'call' 'call_ln76' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 9> <Delay = 0.00>
+ST_14 : Operation 67 [1/1] (0.00ns)   --->   "%max_idx_loc_load = load i4 %max_idx_loc" [mlp.cpp:96]   --->   Operation 67 'load' 'max_idx_loc_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 68 [1/1] (0.00ns)   --->   "%write_ln96 = write void @_ssdm_op_Write.ap_none.i4P0A, i4 %led_out, i4 %max_idx_loc_load" [mlp.cpp:96]   --->   Operation 68 'write' 'write_ln96' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 69 [1/1] (0.00ns)   --->   "%ret_ln97 = ret" [mlp.cpp:97]   --->   Operation 69 'ret' 'ret_ln97' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.620ns
+The critical path consists of the following:
+	wire read operation ('image_idx_read') on port 'image_idx' [13]  (0.000 ns)
+	'mul' operation 13 bit ('mul_ln63', mlp.cpp:63->mlp.cpp:95) [26]  (5.620 ns)
+
+ <State 2>: 5.391ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln63', mlp.cpp:63->mlp.cpp:95) to 'nn_fpga_top_Pipeline_VITIS_LOOP_63_1' [27]  (5.391 ns)
+
+ <State 3>: 5.343ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln63', mlp.cpp:63->mlp.cpp:95) to 'nn_fpga_top_Pipeline_VITIS_LOOP_63_1' [27]  (5.343 ns)
+
+ <State 4>: 3.756ns
+The critical path consists of the following:
+	'load' operation 16 bit ('phi_mul_load', mlp.cpp:29->mlp.cpp:71->mlp.cpp:95) on local variable 'phi_mul' [32]  (0.000 ns)
+	'add' operation 16 bit ('add_ln29_1', mlp.cpp:29->mlp.cpp:71->mlp.cpp:95) [34]  (2.146 ns)
+	'store' operation 0 bit ('store_ln29', mlp.cpp:29->mlp.cpp:71->mlp.cpp:95) of variable 'add_ln29_1', mlp.cpp:29->mlp.cpp:71->mlp.cpp:95 on local variable 'phi_mul' [52]  (1.610 ns)
+
+ <State 5>: 5.403ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln29', mlp.cpp:29->mlp.cpp:71->mlp.cpp:95) to 'nn_fpga_top_Pipeline_VITIS_LOOP_32_2' [42]  (5.403 ns)
+
+ <State 6>: 2.152ns
+The critical path consists of the following:
+	'load' operation 5 bit ('B1_load', mlp.cpp:36->mlp.cpp:71->mlp.cpp:95) on array 'B1' [45]  (2.152 ns)
+
+ <State 7>: 5.902ns
+The critical path consists of the following:
+	'load' operation 16 bit ('acc_1_loc_load') on local variable 'acc_1_loc' [43]  (0.000 ns)
+	'add' operation 16 bit ('acc', mlp.cpp:36->mlp.cpp:71->mlp.cpp:95) [47]  (2.146 ns)
+	'call' operation 16 bit ('ref_tmp12_i_i', mlp.cpp:40->mlp.cpp:71->mlp.cpp:95) to 'my_tanh' [48]  (3.756 ns)
+
+ <State 8>: 4.997ns
+The critical path consists of the following:
+	'call' operation 16 bit ('ref_tmp12_i_i', mlp.cpp:40->mlp.cpp:71->mlp.cpp:95) to 'my_tanh' [48]  (1.740 ns)
+	'store' operation 0 bit ('store_ln40', mlp.cpp:40->mlp.cpp:71->mlp.cpp:95) of variable 'ref_tmp12_i_i', mlp.cpp:40->mlp.cpp:71->mlp.cpp:95 on array 'in', mlp.cpp:68->mlp.cpp:95 [50]  (3.257 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 2.152ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('out', mlp.cpp:72->mlp.cpp:95) [56]  (0.000 ns)
+	'load' operation 16 bit ('max_val', mlp.cpp:76->mlp.cpp:95) on array 'output', mlp.cpp:59->mlp.cpp:95 [57]  (2.152 ns)
+
+ <State 11>: 2.152ns
+The critical path consists of the following:
+	'load' operation 16 bit ('max_val', mlp.cpp:76->mlp.cpp:95) on array 'output', mlp.cpp:59->mlp.cpp:95 [57]  (2.152 ns)
+
+ <State 12>: 1.610ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln76', mlp.cpp:76->mlp.cpp:95) to 'nn_fpga_top_Pipeline_VITIS_LOOP_77_2' [58]  (1.610 ns)
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2025.1
+Project:             final_nn_fpga_tanh
+Solution:            hls
+Device target:       xc7a35t-cpg236-1
+Report date:         Tue Nov 25 01:27:23 IST 2025
+
+#=== Post-Implementation Resource usage ===
+SLICE:         1477
+LUT:           4262
+FF:            4308
+DSP:             40
+BRAM:            46
+URAM:             0
+LATCH:            0
+SRL:            225
+CLB:              0
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      6.572
+CP achieved post-implementation: 7.966
+Timing met

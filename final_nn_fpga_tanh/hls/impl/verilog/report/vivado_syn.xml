@@ -1,0 +1,254 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.572</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.572</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>6.572</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>3.428</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>3.428</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>3.428</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>3.428</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>46</BRAM>
+    <CLB>0</CLB>
+    <DSP>40</DSP>
+    <FF>4630</FF>
+    <LATCH>0</LATCH>
+    <LUT>4951</LUT>
+    <SRL>365</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>100</BRAM>
+    <CLB>0</CLB>
+    <DSP>90</DSP>
+    <FF>41600</FF>
+    <LUT>20800</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="nn_fpga_top" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="9">B1_U grp_my_tanh_fu_184 grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175 grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165 grp_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_fu_157 grp_nn_fpga_top_Pipeline_VITIS_LOOP_77_2_fu_196 h1_U image_U output_U</SubModules>
+    <Resources BRAM="46" DSP="40" FF="4630" LUT="4951" LUTRAM="16" LogicLUT="4570" RAMB18="8" RAMB36="19" SRL="365"/>
+    <LocalResources FF="103" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/B1_U" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_B1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_my_tanh">
+    <SubModules count="3">dcmp_64ns_64ns_1_2_no_dsp_1_U42 fpext_32ns_64_2_no_dsp_1_U41 grp_generic_tanh_float_s_fu_151</SubModules>
+    <Resources BRAM="6" DSP="37" FF="4343" LUT="4690" LogicLUT="4333" RAMB18="4" RAMB36="1" SRL="357"/>
+    <LocalResources FF="417" LUT="454" LogicLUT="454"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/dcmp_64ns_64ns_1_2_no_dsp_1_U42" DEPTH="2" FILE_NAME="nn_fpga_top_my_tanh.v" ORIG_REF_NAME="nn_fpga_top_dcmp_64ns_64ns_1_2_no_dsp_1">
+    <Resources FF="53" LUT="105" LogicLUT="105"/>
+    <LocalResources FF="53" LUT="44" LogicLUT="44"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/fpext_32ns_64_2_no_dsp_1_U41" DEPTH="2" FILE_NAME="nn_fpga_top_my_tanh.v" ORIG_REF_NAME="nn_fpga_top_fpext_32ns_64_2_no_dsp_1">
+    <Resources FF="97" LUT="99" LogicLUT="99"/>
+    <LocalResources FF="97" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151" DEPTH="2" FILE_NAME="nn_fpga_top_my_tanh.v" ORIG_REF_NAME="nn_fpga_top_generic_tanh_float_s">
+    <SubModules count="8">dadd_64ns_64ns_64_8_full_dsp_1_U32 faddfsub_32ns_32ns_32_7_full_dsp_1_U26 fcmp_32ns_32ns_1_2_no_dsp_1_U31 fdiv_32ns_32ns_32_16_no_dsp_1_U28 fmul_32ns_32ns_32_4_max_dsp_1_U27 fpext_32ns_64_2_no_dsp_1_U30 fptrunc_64ns_32_2_no_dsp_1_U29 grp_exp_generic_double_s_fu_89</SubModules>
+    <Resources BRAM="6" DSP="37" FF="3776" LUT="4032" LogicLUT="3675" RAMB18="4" RAMB36="1" SRL="357"/>
+    <LocalResources FF="644" LUT="158" LogicLUT="158"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/dadd_64ns_64ns_64_8_full_dsp_1_U32" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_dadd_64ns_64ns_64_8_full_dsp_1">
+    <Resources DSP="3" FF="493" LUT="633" LogicLUT="618" SRL="15"/>
+    <LocalResources FF="63"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/faddfsub_32ns_32ns_32_7_full_dsp_1_U26" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_faddfsub_32ns_32ns_32_7_full_dsp_1">
+    <Resources DSP="2" FF="289" LUT="272" LogicLUT="272"/>
+    <LocalResources FF="65" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/fcmp_32ns_32ns_1_2_no_dsp_1_U31" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_fcmp_32ns_32ns_1_2_no_dsp_1">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/fdiv_32ns_32ns_32_16_no_dsp_1_U28" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_fdiv_32ns_32ns_32_16_no_dsp_1">
+    <Resources FF="730" LUT="791" LogicLUT="757" SRL="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/fmul_32ns_32ns_32_4_max_dsp_1_U27" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="111" LUT="75" LogicLUT="75"/>
+    <LocalResources FF="62"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/fpext_32ns_64_2_no_dsp_1_U30" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_fpext_32ns_64_2_no_dsp_1">
+    <Resources FF="32" LUT="67" LogicLUT="67"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/fptrunc_64ns_32_2_no_dsp_1_U29" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_fptrunc_64ns_32_2_no_dsp_1">
+    <LocalResources FF="64" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89" DEPTH="3" FILE_NAME="nn_fpga_top_generic_tanh_float_s.v" ORIG_REF_NAME="nn_fpga_top_exp_generic_double_s">
+    <SubModules count="6">mac_muladd_16s_15ns_19s_31_4_1_U15 mul_13s_71s_71_5_1_U10 mul_43ns_36ns_79_3_1_U11 mul_49ns_44ns_93_5_1_U12 mul_50ns_50ns_99_5_1_U13 table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U</SubModules>
+    <Resources BRAM="6" DSP="29" FF="1383" LUT="1926" LogicLUT="1618" RAMB18="4" RAMB36="1" SRL="308"/>
+    <LocalResources BRAM="4" FF="1243" LUT="1324" LogicLUT="1020" RAMB18="2" RAMB36="1" SRL="304"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mac_muladd_16s_15ns_19s_31_4_1_U15" DEPTH="4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" ORIG_REF_NAME="nn_fpga_top_mac_muladd_16s_15ns_19s_31_4_1">
+    <Resources DSP="1" LUT="195" LogicLUT="195"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_13s_71s_71_5_1_U10" DEPTH="4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" ORIG_REF_NAME="nn_fpga_top_mul_13s_71s_71_5_1">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11" DEPTH="4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" ORIG_REF_NAME="nn_fpga_top_mul_43ns_36ns_79_3_1">
+    <Resources DSP="6" FF="35" LUT="76" LogicLUT="76"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12" DEPTH="4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" ORIG_REF_NAME="nn_fpga_top_mul_49ns_44ns_93_5_1">
+    <Resources DSP="9" FF="53" LUT="124" LogicLUT="124"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13" DEPTH="4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" ORIG_REF_NAME="nn_fpga_top_mul_50ns_50ns_99_5_1">
+    <Resources DSP="9" FF="18" LUT="159" LogicLUT="159"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U" DEPTH="4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" ORIG_REF_NAME="nn_fpga_top_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_32_2">
+    <SubModules count="3">W1_U flow_control_loop_pipe_sequential_init_U mac_muladd_10s_8s_24s_24_4_1_U4</SubModules>
+    <Resources BRAM="32" DSP="1" FF="33" LUT="69" LogicLUT="68" RAMB36="16" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175/W1_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_32_2.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_W1_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_32_2.v" ORIG_REF_NAME="nn_fpga_top_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_32_2_fu_175/mac_muladd_10s_8s_24s_24_4_1_U4" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_32_2.v" ORIG_REF_NAME="nn_fpga_top_mac_muladd_10s_8s_24s_24_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2">
+    <SubModules count="4">B2_U W2_U flow_control_loop_pipe_sequential_init_U mac_muladd_16s_9s_24ns_24_4_1_U47</SubModules>
+    <Resources BRAM="1" DSP="1" FF="74" LUT="89" LogicLUT="82" RAMB18="1" SRL="7"/>
+    <LocalResources FF="65" LUT="38" LogicLUT="31" SRL="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165/B2_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_B2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165/W2_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_W2_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2.v" ORIG_REF_NAME="nn_fpga_top_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2_fu_165/mac_muladd_16s_9s_24ns_24_4_1_U47" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_47_2.v" ORIG_REF_NAME="nn_fpga_top_mac_muladd_16s_9s_24ns_24_4_1">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_fu_157" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_63_1">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U test_images_U</SubModules>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_fu_157/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_63_1.v" ORIG_REF_NAME="nn_fpga_top_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_fu_157/test_images_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_63_1.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_63_1_test_images_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_77_2_fu_196" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_77_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_nn_fpga_top_Pipeline_VITIS_LOOP_77_2_fu_196/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="nn_fpga_top_nn_fpga_top_Pipeline_VITIS_LOOP_77_2.v" ORIG_REF_NAME="nn_fpga_top_flow_control_loop_pipe_sequential_init">
+  </RtlModule>
+  <RtlModule CELL="inst/h1_U" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_h1_RAM_AUTO_1R1W">
+  </RtlModule>
+  <RtlModule CELL="inst/image_U" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_image_RAM_AUTO_1R1W">
+  </RtlModule>
+  <RtlModule CELL="inst/output_U" DEPTH="1" FILE_NAME="nn_fpga_top.v" ORIG_REF_NAME="nn_fpga_top_output_RAM_AUTO_1R1W">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.85871458053588867" DATAPATH_LOGIC_DELAY="3.90299963951110840" DATAPATH_NET_DELAY="1.95571422576904297" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[14]" LOGIC_LEVELS="15" MAX_FANOUT="2" SLACK="3.42828035354614258" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="645"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[49]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="nn_fpga_top_mul_50ns_50ns_99_5_1.v" LINE_NUMBER="56"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.50300121307373047" DATAPATH_LOGIC_DELAY="4.67199993133544922" DATAPATH_NET_DELAY="1.83099997043609619" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]/D" LOGIC_LEVELS="20" MAX_FANOUT="53" SLACK="3.44199347496032715" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_ln297_reg_1349_reg[48]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_ln297_reg_1349_reg[48]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="722"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="nn_fpga_top.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="657"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.87542963027954102" DATAPATH_LOGIC_DELAY="4.26700019836425781" DATAPATH_NET_DELAY="1.60842835903167725" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg/A[16]" LOGIC_LEVELS="10" MAX_FANOUT="4" SLACK="3.49956512451171875" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="nn_fpga_top_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud.v" LINE_NUMBER="49"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="652"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.87542963027954102" DATAPATH_LOGIC_DELAY="4.26700019836425781" DATAPATH_NET_DELAY="1.60842835903167725" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__0/A[16]" LOGIC_LEVELS="10" MAX_FANOUT="4" SLACK="3.49956512451171875" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="nn_fpga_top_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud.v" LINE_NUMBER="49"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="652"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.87542963027954102" DATAPATH_LOGIC_DELAY="4.26700019836425781" DATAPATH_NET_DELAY="1.60842835903167725" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__1/A[16]" LOGIC_LEVELS="10" MAX_FANOUT="4" SLACK="3.49956512451171875" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="nn_fpga_top_exp_generic_double_s_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_arracud.v" LINE_NUMBER="49"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="960"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__1" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="nn_fpga_top_exp_generic_double_s.v" LINE_NUMBER="652"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/nn_fpga_top_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/nn_fpga_top_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/nn_fpga_top_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/nn_fpga_top_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/nn_fpga_top_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/nn_fpga_top_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/nn_fpga_top_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

@@ -1,0 +1,870 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Tue Nov 25 01:26:05 2025
+| Host         : unnath-popos running 64-bit Pop!_OS 24.04 LTS
+| Command      : report_timing -max_paths 10 -file ./report/nn_fpga_top_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             3.428ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[14]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.859ns  (logic 3.903ns (66.619%)  route 1.956ns (33.381%))
+  Logic Levels:           15  (CARRY4=14 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/Q
+                         net (fo=2, unplaced)         0.481     1.932    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/I198[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8/O
+                         net (fo=1, unplaced)         0.000     2.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.760 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.009     2.769    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.886 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     2.886    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.003 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.003    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.120 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.120    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.237 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.237    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.354 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.354    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.471 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.471    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.705 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.705    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.822 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.822    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.078 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_2/O[2]
+                         net (fo=1, unplaced)         0.666     4.744    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/zext_ln145_1_fu_790_p1[42]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.834     5.578 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.578    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.695 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.695    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     6.032 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[49]_i_1/O[1]
+                         net (fo=2, unplaced)         0.800     6.832    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/D[48]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[14])
+                                                     -0.629    10.260    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg
+  -------------------------------------------------------------------
+                         required time                         10.260    
+                         arrival time                          -6.832    
+  -------------------------------------------------------------------
+                         slack                                  3.428    
+
+Slack (MET) :             3.442ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_ln297_reg_1349_reg[48]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.503ns  (logic 4.672ns (71.844%)  route 1.831ns (28.156%))
+  Logic Levels:           20  (CARRY4=18 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_ln297_reg_1349_reg[48]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_ln297_reg_1349_reg[48]/Q
+                         net (fo=1, unplaced)         0.666     2.157    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_ln297_reg_1349[48]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.808     2.965 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3/CO[3]
+                         net (fo=1, unplaced)         0.009     2.974    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.091 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.091    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[2]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.208 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.208    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[6]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.325 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.325    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[10]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.442 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.442    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[14]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.559 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.559    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[18]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.676 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.676    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[22]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.793 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.793    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[26]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.910 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.910    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[30]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.027 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.027    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[34]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.144 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.144    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[38]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.261 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.261    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[42]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.378 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.378    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[46]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.495 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.495    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[50]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.751 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/select_ln303_reg_1371_reg[51]_i_2/O[2]
+                         net (fo=53, unplaced)        0.536     5.287    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/add_ln297_1_fu_843_p2[106]
+                         LUT2 (Prop_lut2_I1_O)        0.301     5.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5/O
+                         net (fo=1, unplaced)         0.000     5.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354[1]_i_5_n_3
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     6.101 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.009     6.110    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[1]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     6.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[4]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     6.558 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/r_exp_2_reg_1354_reg[11]_i_1/O[3]
+                         net (fo=2, unplaced)         0.611     7.169    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_17_fu_869_p4[1]
+                         LUT3 (Prop_lut3_I0_O)        0.307     7.476 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     7.476    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359[0]_i_1_n_3
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.029    10.918    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/icmp_ln309_1_reg_1359_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.918    
+                         arrival time                          -7.476    
+  -------------------------------------------------------------------
+                         slack                                  3.442    
+
+Slack (MET) :             3.500ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg/A[16]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.875ns  (logic 4.267ns (72.624%)  route 1.608ns (27.376%))
+  Logic Levels:           10  (CARRY4=9 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/ap_clk
+                         RAMB18E1                                     r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOPADOP[0])
+                                                      2.454     3.427 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/DOPADOP[0]
+                         net (fo=1, unplaced)         0.800     4.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/zext_ln115_1_fu_665_p1[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     4.351 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14/O
+                         net (fo=1, unplaced)         0.000     4.351    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.884 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5/CO[3]
+                         net (fo=1, unplaced)         0.009     4.893    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.010 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.010    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.127 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.127    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.244 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.244    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.361 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.361    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.478 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.478    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.595 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.595    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.712 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.712    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     6.049 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_1/O[1]
+                         net (fo=4, unplaced)         0.800     6.848    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/exp_Z4_m_1_fu_669_p2[33]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[16])
+                                                     -0.541    10.348    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg
+  -------------------------------------------------------------------
+                         required time                         10.348    
+                         arrival time                          -6.848    
+  -------------------------------------------------------------------
+                         slack                                  3.500    
+
+Slack (MET) :             3.500ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__0/A[16]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.875ns  (logic 4.267ns (72.624%)  route 1.608ns (27.376%))
+  Logic Levels:           10  (CARRY4=9 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/ap_clk
+                         RAMB18E1                                     r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOPADOP[0])
+                                                      2.454     3.427 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/DOPADOP[0]
+                         net (fo=1, unplaced)         0.800     4.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/zext_ln115_1_fu_665_p1[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     4.351 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14/O
+                         net (fo=1, unplaced)         0.000     4.351    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.884 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5/CO[3]
+                         net (fo=1, unplaced)         0.009     4.893    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.010 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.010    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.127 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.127    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.244 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.244    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.361 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.361    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.478 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.478    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.595 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.595    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.712 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.712    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     6.049 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_1/O[1]
+                         net (fo=4, unplaced)         0.800     6.848    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/exp_Z4_m_1_fu_669_p2[33]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__0/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__0/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[16])
+                                                     -0.541    10.348    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__0
+  -------------------------------------------------------------------
+                         required time                         10.348    
+                         arrival time                          -6.848    
+  -------------------------------------------------------------------
+                         slack                                  3.500    
+
+Slack (MET) :             3.500ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__1/A[16]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.875ns  (logic 4.267ns (72.624%)  route 1.608ns (27.376%))
+  Logic Levels:           10  (CARRY4=9 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/ap_clk
+                         RAMB18E1                                     r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOPADOP[0])
+                                                      2.454     3.427 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_U/q1_reg/DOPADOP[0]
+                         net (fo=1, unplaced)         0.800     4.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/zext_ln115_1_fu_665_p1[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     4.351 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14/O
+                         net (fo=1, unplaced)         0.000     4.351    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_14_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.884 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5/CO[3]
+                         net (fo=1, unplaced)         0.009     4.893    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.010 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.010    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.127 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.127    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.244 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.244    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.361 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.361    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/tmp_product_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.478 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.478    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.595 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     5.595    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.712 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.712    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     6.049 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/buff0_reg_i_1/O[1]
+                         net (fo=4, unplaced)         0.800     6.848    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/exp_Z4_m_1_fu_669_p2[33]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__1/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__1/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[16])
+                                                     -0.541    10.348    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_43ns_36ns_79_3_1_U11/buff0_reg__1
+  -------------------------------------------------------------------
+                         required time                         10.348    
+                         arrival time                          -6.848    
+  -------------------------------------------------------------------
+                         slack                                  3.500    
+
+Slack (MET) :             3.503ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[15]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.774ns  (logic 3.818ns (66.127%)  route 1.956ns (33.873%))
+  Logic Levels:           15  (CARRY4=14 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/Q
+                         net (fo=2, unplaced)         0.481     1.932    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/I198[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8/O
+                         net (fo=1, unplaced)         0.000     2.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.760 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.009     2.769    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.886 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     2.886    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.003 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.003    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.120 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.120    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.237 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.237    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.354 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.354    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.471 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.471    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.705 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.705    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.822 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.822    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.078 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_2/O[2]
+                         net (fo=1, unplaced)         0.666     4.744    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/zext_ln145_1_fu_790_p1[42]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.834     5.578 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.578    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.695 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.695    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.252     5.947 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[49]_i_1/CO[2]
+                         net (fo=2, unplaced)         0.800     6.747    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/D[49]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[15])
+                                                     -0.639    10.250    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg
+  -------------------------------------------------------------------
+                         required time                         10.250    
+                         arrival time                          -6.747    
+  -------------------------------------------------------------------
+                         slack                                  3.503    
+
+Slack (MET) :             3.516ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg/B[7]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.771ns  (logic 3.755ns (65.070%)  route 2.016ns (34.930%))
+  Logic Levels:           13  (CARRY4=12 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/Q
+                         net (fo=2, unplaced)         0.481     1.932    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/I197[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_39/O
+                         net (fo=1, unplaced)         0.000     2.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_39_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.760 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20/CO[3]
+                         net (fo=1, unplaced)         0.009     2.769    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.886 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.886    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.003 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     3.003    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.120 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5/CO[3]
+                         net (fo=1, unplaced)         0.000     3.120    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.237 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.237    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.354 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.354    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.471 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.471    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     3.925 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_4__0/O[1]
+                         net (fo=2, unplaced)         0.726     4.651    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/zext_ln126_fu_717_p1[33]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.839     5.490 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0/CO[3]
+                         net (fo=1, unplaced)         0.000     5.490    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.607 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0/CO[3]
+                         net (fo=1, unplaced)         0.000     5.607    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     5.944 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0/O[1]
+                         net (fo=4, unplaced)         0.800     6.744    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/D[41]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg/B[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[7])
+                                                     -0.629    10.260    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg
+  -------------------------------------------------------------------
+                         required time                         10.260    
+                         arrival time                          -6.744    
+  -------------------------------------------------------------------
+                         slack                                  3.516    
+
+Slack (MET) :             3.516ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0/B[7]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.771ns  (logic 3.755ns (65.070%)  route 2.016ns (34.930%))
+  Logic Levels:           13  (CARRY4=12 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/Q
+                         net (fo=2, unplaced)         0.481     1.932    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/I197[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_39/O
+                         net (fo=1, unplaced)         0.000     2.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_39_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.760 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20/CO[3]
+                         net (fo=1, unplaced)         0.009     2.769    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.886 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.886    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.003 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     3.003    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.120 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5/CO[3]
+                         net (fo=1, unplaced)         0.000     3.120    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.237 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.237    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.354 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.354    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.471 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.471    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     3.925 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_4__0/O[1]
+                         net (fo=2, unplaced)         0.726     4.651    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/zext_ln126_fu_717_p1[33]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.839     5.490 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0/CO[3]
+                         net (fo=1, unplaced)         0.000     5.490    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.607 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0/CO[3]
+                         net (fo=1, unplaced)         0.000     5.607    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     5.944 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0/O[1]
+                         net (fo=4, unplaced)         0.800     6.744    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/D[41]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0/B[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[7])
+                                                     -0.629    10.260    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg__0
+  -------------------------------------------------------------------
+                         required time                         10.260    
+                         arrival time                          -6.744    
+  -------------------------------------------------------------------
+                         slack                                  3.516    
+
+Slack (MET) :             3.516ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg/B[7]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.771ns  (logic 3.755ns (65.070%)  route 2.016ns (34.930%))
+  Logic Levels:           13  (CARRY4=12 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z4_m_1_reg_1251_pp0_iter14_reg_reg[1]__0/Q
+                         net (fo=2, unplaced)         0.481     1.932    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/I197[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_39/O
+                         net (fo=1, unplaced)         0.000     2.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_39_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.760 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20/CO[3]
+                         net (fo=1, unplaced)         0.009     2.769    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_20_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.886 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.886    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_15_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.003 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     3.003    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.120 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5/CO[3]
+                         net (fo=1, unplaced)         0.000     3.120    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg__0_i_5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.237 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.237    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_14__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.354 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.354    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_9__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.471 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.471    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_6__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/tmp_product_i_5__0_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     3.925 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_4__0/O[1]
+                         net (fo=2, unplaced)         0.726     4.651    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/zext_ln126_fu_717_p1[33]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.839     5.490 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0/CO[3]
+                         net (fo=1, unplaced)         0.000     5.490    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_3__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.607 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0/CO[3]
+                         net (fo=1, unplaced)         0.000     5.607    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_2__0_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     5.944 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff0_reg_i_1__0/O[1]
+                         net (fo=4, unplaced)         0.800     6.744    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/D[41]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg/B[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[7])
+                                                     -0.629    10.260    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_49ns_44ns_93_5_1_U12/buff1_reg
+  -------------------------------------------------------------------
+                         required time                         10.260    
+                         arrival time                          -6.744    
+  -------------------------------------------------------------------
+                         slack                                  3.516    
+
+Slack (MET) :             3.537ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[13]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.754ns  (logic 3.798ns (66.010%)  route 1.956ns (33.990%))
+  Logic Levels:           15  (CARRY4=14 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/exp_Z2P_m_1_reg_1287_pp0_iter20_reg_reg[1]__0/Q
+                         net (fo=2, unplaced)         0.481     1.932    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/I198[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295     2.227 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8/O
+                         net (fo=1, unplaced)         0.000     2.227    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324[2]_i_8_n_3
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.760 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.009     2.769    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[2]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.886 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     2.886    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[6]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.003 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.003    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[10]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.120 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.120    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[14]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.237 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.237    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[18]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.354 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.354    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[22]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.471 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.471    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[26]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.588 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.588    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[30]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.705 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.705    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[34]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.822 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.822    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[38]_i_2_n_3
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.078 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_2/O[2]
+                         net (fo=1, unplaced)         0.666     4.744    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/zext_ln145_1_fu_790_p1[42]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.834     5.578 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.578    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[42]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.695 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.695    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[46]_i_1_n_3
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     5.927 r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/exp_Z1P_m_1_reg_1324_reg[49]_i_1/O[0]
+                         net (fo=2, unplaced)         0.800     6.727    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/D[47]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/B[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5082, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_B[13])
+                                                     -0.625    10.264    bd_0_i/hls_inst/inst/grp_my_tanh_fu_184/grp_generic_tanh_float_s_fu_151/grp_exp_generic_double_s_fu_89/mul_50ns_50ns_99_5_1_U13/buff1_reg
+  -------------------------------------------------------------------
+                         required time                         10.264    
+                         arrival time                          -6.727    
+  -------------------------------------------------------------------
+                         slack                                  3.537    
+
+
+
+
